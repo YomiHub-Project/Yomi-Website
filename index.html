@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>YomiHub – Đọc truyện, xem phim, đọc tiểu thuyết &amp; Tủ Sách Cá Nhân</title>
-<meta name="description" content="YomiHub 0.6.6: ứng dụng mã nguồn mở gom mọi thứ để đọc và xem vào một nơi: truyện tranh, phim &amp; anime, tiểu thuyết, Google Play Sách, Booru và Tủ Sách Cá Nhân – chạy trên Android (6.0+), Android TV (YumiHub Android TV) và Windows 10/11 x64.">
+<meta name="description" content="YomiHub 0.6.7: ứng dụng mã nguồn mở gom mọi thứ để đọc và xem vào một nơi: truyện tranh, phim &amp; anime, tiểu thuyết, Google Play Sách, Booru và Tủ Sách Cá Nhân – chạy trên Android (6.0+), Android TV (YumiHub Android TV), Windows 10/11 x64 và bản xem trước Samsung TV (Tizen 4.0+).">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
@@ -68,8 +68,34 @@
 </header>
 
 <!-- Tờ giấy nội dung -->
-<main class="wrap"><p class="shelf-note">Bản 0.6.6: <a href="https://github.com/YomiHub-Project/YomiHub-Project/releases/tag/v0.6.6">ghi chú phát hành</a> · <a href="download.html">tải về</a>. Các mục 0.6.4 bên dưới là lịch sử phiên bản trước.</p>
-  <h2 id="moi">Có gì mới trong 0.6.4 <small>· 21/11/2026</small></h2>
+<main class="wrap"><p class="shelf-note">Bản 0.6.7: <a href="https://github.com/YomiHub-Project/YomiHub-Project/releases/tag/v0.6.7">ghi chú phát hành</a> · <a href="download.html">tải về</a>. Các mục 0.6.4 bên dưới là lịch sử phiên bản trước.</p>
+  <h2 id="moi">Có gì mới trong 0.6.7 <small>· 3 tính năng mới · 8 lỗi đã sửa · 4 cải tiến</small></h2>
+  <div class="whatsnew-grid">
+    <div class="card new">
+      <h3><span>✨ Tính năng mới &amp; ổn định</span><span class="badge">0.6.7</span></h3>
+      <ul>
+        <li><strong>YumiHub cho Samsung Smart TV (Tizen 3.0+, đời 2017+) — bản xem trước</strong>: ứng dụng Tizen Web App (<code>.wgt</code>) chỉ có Phim &amp; Điện ảnh, màn chờ 5 giây, thanh bên Thư viện · Cập nhật · Duyệt · Thêm, nhớ vị trí xem, nhập thư viện từ tệp sao lưu YomiHub và điều khiển remote (mũi tên/OK/Return, Play/Pause/Stop/tua, phím màu A–D); cài qua Developer Mode (cần ký chứng chỉ Samsung).</li>
+        <li><strong>Kiểm tra cập nhật kho tiện ích báo rõ kho lỗi và lý do</strong> (DNS, hết thời gian, HTTP &lt;mã&gt;, sai định dạng) thay vì chỉ đếm số kho lỗi.</li>
+        <li><strong>Nhật ký lỗi tiện ích ghi thêm ID nguồn và phiên bản tiện ích</strong>; địa chỉ kho trong nhật ký được làm sạch (bỏ tài khoản, tham số, phân đoạn).</li>
+        <li><strong>Cải tiến độ ổn định</strong>: thêm kiểm thử tự động (ảnh cục bộ, bộ ngắt máy chủ ảnh, đổi tên kho, tìm kiếm toàn cục, Issue #2); kiểm tra cú pháp ES5 và đóng gói <code>.wgt</code> trên GitHub Actions; cập nhật 65 ngôn ngữ; website chính thức tại <code>yomihub-project.github.io/Yomi-Website</code> và bản sao trên WordPress.</li>
+      </ul>
+    </div>
+    <div class="card fix">
+      <h3><span>🐛 Lỗi đã sửa</span><span class="badge">8 mục</span></h3>
+      <ul>
+        <li>Ảnh bìa từ bộ nhớ máy (<code>content://</code>, <code>file://</code> — Tủ Sách, thư mục cục bộ) không hiện.</li>
+        <li>Ảnh từ máy chủ đang lỗi (vd. <code>cdn.donmai.us</code>) không còn thử lại hàng trăm lần mỗi phút; tạm ngưng 30 giây sau 8 lỗi liên tiếp.</li>
+        <li>Kho tiện ích mặc định đổi tên thành <strong>YomiHub Extension Repo</strong> (<code>YomiHub-Project/YomiHub-Extension-Repo</code>) — kho cũ tự chuyển sang địa chỉ mới, tiện ích đã cài vẫn nhận cập nhật (Issue #2).</li>
+        <li>Tìm kiếm toàn cục giữ đúng giới hạn số nguồn chạy đồng thời (không chen hàng chờ).</li>
+        <li>Tìm kiếm toàn cục bỏ qua trong 10 phút các nguồn có tên miền không còn tồn tại (DNS).</li>
+        <li>Giao diện không còn treo ~2,4 giây khi xem trước tệp sao lưu lớn.</li>
+        <li>Trình phát giữ đúng vị trí xem khi máy chủ video lỗi giữa chừng và tự đổi máy chủ.</li>
+        <li>Màn chẩn đoán Windows bỏ nhắc gói <code>-full.zip</code> (đã gộp vào <code>.zip</code> từ 0.6.6+60) ở 66 ngôn ngữ.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="shelf-note">Đã biết: trình phát có lúc khựng 3–4 giây khi đổi máy chủ (dự kiến 0.6.8); bản Samsung TV là bản xem trước; TeraBox chưa hỗ trợ; Android 6 vẫn có nguồn lỗi TLS. Đầy đủ: <a href="download.html#verify">ghi chú phát hành 0.6.7</a> · <a href="https://github.com/YomiHub-Project/YomiHub-Project/releases/tag/v0.6.7">trang phát hành v0.6.7</a>.</p>
+  <h2 id="moi-064">Có gì mới trong 0.6.4 <small>· 21/11/2026</small></h2>
   <div class="whatsnew-grid">
     <div class="card new">
       <h3><span>✨ Tính năng mới</span><span class="badge">4 mục</span></h3>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>YomiHub – Comics, movies, novels and your personal bookshelf</title>
-<meta name="description" content="YomiHub 0.6.6 brings comics, movies, anime, novels, Google Play Books, Booru and a personal bookshelf to Android 6.0+ and Windows 10/11 x64. YumiHub Android TV focuses on movies and anime.">
+<meta name="description" content="YomiHub 0.6.7 brings comics, movies, anime, novels, Google Play Books, Booru and a personal bookshelf to Android 6.0+ and Windows 10/11 x64. YumiHub Android TV and the Samsung TV (Tizen 4.0+) preview focus on movies and anime.">
 <link rel="icon" href="../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
@@ -68,8 +68,34 @@
 </header>
 
 <!-- Page content -->
-<main class="wrap"><p class="shelf-note">Version 0.6.6: <a href="https://github.com/YomiHub-Project/YomiHub-Project/releases/tag/v0.6.6">release notes</a> · <a href="download.html">download</a>. Items from 0.6.4 below represent the previous version history.</p>
-  <h2 id="moi">What’s new in 0.6.4 <small>· November 21, 2026</small></h2>
+<main class="wrap"><p class="shelf-note">Version 0.6.7: <a href="https://github.com/YomiHub-Project/YomiHub-Project/releases/tag/v0.6.7">release notes</a> · <a href="download.html">download</a>. Items from 0.6.4 below represent the previous version history.</p>
+  <h2 id="moi">What’s new in 0.6.7 <small>· 3 new features · 8 fixes · 4 stability improvements</small></h2>
+  <div class="whatsnew-grid">
+    <div class="card new">
+      <h3><span>✨ New features &amp; stability</span><span class="badge">0.6.7</span></h3>
+      <ul>
+        <li><strong>YumiHub for Samsung Smart TV (Tizen 3.0+, 2017+) — preview</strong>: a Tizen Web App (<code>.wgt</code>) with Movies &amp; TV only, 5-second splash, Library · Updates · Browse · More sidebar, saved watch position, library import from a YomiHub backup and Samsung remote support (arrows/OK/Return, Play/Pause/Stop/seek, colour keys A–D); installed via Developer Mode (requires a Samsung certificate).</li>
+        <li><strong>Checking extension repos for updates now names the failing repo and reason</strong> (DNS, timeout, HTTP &lt;code&gt;, bad format) instead of only a count.</li>
+        <li><strong>Extension error logs include the source ID and extension version</strong>; repo addresses in logs are cleaned (no credentials, query or fragment).</li>
+        <li><strong>Stability improvements</strong>: new automated tests (local images, image host breaker, repo rename, global search, Issue #2); automatic ES5 syntax check and <code>.wgt</code> packaging in GitHub Actions; 65 languages updated; official website at <code>yomihub-project.github.io/Yomi-Website</code> and mirror on WordPress.</li>
+      </ul>
+    </div>
+    <div class="card fix">
+      <h3><span>🐛 Fixes</span><span class="badge">8 items</span></h3>
+      <ul>
+        <li>Covers stored on the device (<code>content://</code>, <code>file://</code> — Bookshelf, local folders) did not show.</li>
+        <li>Images from a failing host (e.g. <code>cdn.donmai.us</code>) are paused for 30 s after 8 errors in a row instead of retrying hundreds of times per minute.</li>
+        <li>The default extension repo is renamed <strong>YomiHub Extension Repo</strong> (<code>YomiHub-Project/YomiHub-Extension-Repo</code>) — existing repos move automatically and installed extensions keep updating (Issue #2).</li>
+        <li>Global search stays within the concurrent source limit (new requests no longer jump the queue).</li>
+        <li>Global search skips sources whose domain no longer resolves (DNS) for 10 minutes.</li>
+        <li>UI no longer freezes ~2.4 s while previewing a large backup.</li>
+        <li>The player keeps the watch position when a video server fails mid-playback and switches servers.</li>
+        <li>The Windows diagnostics screen no longer mentions the retired <code>-full.zip</code> package (merged into <code>.zip</code> since 0.6.6+60) across 66 languages.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="shelf-note">Known issues: the player can stall 3–4 s when switching servers (being investigated for 0.6.8); the Samsung TV app is a preview; TeraBox is not supported; Android 6 still has TLS-limited sources. Full details: <a href="download.html#verify">0.6.7 release notes</a> · <a href="https://github.com/YomiHub-Project/YomiHub-Project/releases/tag/v0.6.7">v0.6.7 on GitHub</a>.</p>
+  <h2 id="moi-064">What’s new in 0.6.4 <small>· November 21, 2026</small></h2>
   <div class="whatsnew-grid">
     <div class="card new">
       <h3><span>✨ New features</span><span class="badge">4 additions</span></h3>
