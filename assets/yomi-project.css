@@ -1,0 +1,584 @@
+/* ==========================================================================
+   Yomi-Project Hub Stylesheet (projects/ & links/)
+   Extends assets/site.css with bilingual toggle & responsive layouts that
+   work identically on GitHub Pages and WordPress inline HTML (no @media
+   dependency, no SVG dependency, no animations/JS needed for layout).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Bilingual In-Page Visibility Toggle (data-lang="vi" / data-lang="en")
+   -------------------------------------------------------------------------- */
+html:not([lang="en"]) [data-lang="en"] {
+  display: none !important;
+}
+
+html[lang="en"] [data-lang="vi"] {
+  display: none !important;
+}
+
+/* Interactive language buttons matching .lang-switch / .lang-opt in site.css */
+button.lang-opt {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button.lang-opt.active,
+button.lang-opt[aria-pressed="true"] {
+  background: #ffffff;
+  color: var(--violet);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  font-weight: 800;
+}
+
+/* --------------------------------------------------------------------------
+   2. Header, Container, Nav & Hero
+   Selectors use specificity >= (0,1,1)/(0,2,0) to override site.css @media
+   rules so GitHub Pages and blank-wrapped WordPress inline HTML render
+   identically at both desktop (1280px) and mobile (375px) without @media.
+   -------------------------------------------------------------------------- */
+body .banner-band {
+  padding: 14px 16px 0;
+}
+
+body .wrap {
+  padding: 26px 16px 48px;
+}
+
+.banner-band .top-bar {
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 14px;
+}
+
+.top-bar .brand-link {
+  gap: 9px;
+  font-size: 1.12rem;
+}
+
+.top-bar .brand-link span {
+  display: inline;
+}
+
+.brand-link .brand-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+}
+
+.top-bar .top-actions {
+  gap: 8px;
+}
+
+.top-actions .btn-top {
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.lang-switch .lang-opt {
+  padding: 4px 9px;
+  font-size: 0.78rem;
+  min-width: 26px;
+}
+
+.banner-band .bookmark-nav {
+  width: 100%;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.bookmark-nav .tab-link {
+  flex: 0 0 auto;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+  white-space: nowrap;
+}
+
+.bookmark-nav .tab-link.active {
+  padding-bottom: 11px;
+}
+
+.yp-hero {
+  padding: 18px 0 26px;
+}
+
+.yp-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.yp-hero h1 {
+  font-size: 2.05rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+  color: #ffffff;
+  text-shadow: var(--banner-text-shadow);
+}
+
+.yp-hero-lead {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 0 20px 0;
+  max-width: 66ch;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------------------------------------------------------------
+   3. Ecosystem Highlights & Quick Jump Strip
+   -------------------------------------------------------------------------- */
+.yp-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 14px;
+  margin: 0 0 28px 0;
+}
+
+.yp-stat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: var(--card-shadow);
+  min-width: 0;
+}
+
+.yp-stat-value {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.28;
+  margin-bottom: 4px;
+}
+
+.yp-stat-label {
+  font-size: 0.86rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.yp-quick-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 14px;
+  margin: 0 0 28px 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. Project Showcase Cards (projects/index.html)
+   -------------------------------------------------------------------------- */
+.yp-section-heading {
+  margin: 26px 0 16px 0;
+}
+
+.yp-section-heading h2 {
+  margin: 0 0 6px 0;
+}
+
+.yp-section-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.yp-projects-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin: 16px 0 32px 0;
+}
+
+.yp-project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px 22px;
+  box-shadow: var(--card-shadow);
+  scroll-margin-top: 24px;
+  min-width: 0;
+}
+
+.yp-project-card.accent-violet {
+  border-top: 4px solid var(--violet);
+}
+
+.yp-project-card.accent-blue {
+  border-top: 4px solid var(--blue);
+}
+
+.yp-project-card.accent-teal {
+  border-top: 4px solid var(--teal);
+}
+
+.yp-project-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px 14px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.yp-project-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex: 1 1 240px;
+}
+
+.yp-project-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.yp-project-icon img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  display: block;
+}
+
+.yp-project-title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.yp-project-sub {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 3px 0 0 0;
+  line-height: 1.4;
+}
+
+.yp-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.yp-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  white-space: nowrap;
+}
+
+.yp-badge-outline {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.yp-project-desc {
+  color: var(--ink);
+  font-size: 0.96rem;
+  line-height: 1.62;
+  margin: 0 0 18px 0;
+  max-width: 82ch;
+}
+
+.yp-project-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.yp-features-box {
+  flex: 1.45 1 320px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.yp-features-box h3,
+.yp-meta-box h3 {
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--muted);
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.yp-feature-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.yp-feature-list li {
+  margin: 6px 0;
+  font-size: 0.93rem;
+  line-height: 1.52;
+  color: var(--ink);
+}
+
+.yp-meta-box {
+  flex: 1 1 250px;
+  min-width: 0;
+  max-width: 100%;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 18px;
+}
+
+.yp-meta-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.yp-meta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.yp-meta-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.yp-meta-row dt {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.yp-meta-row dd {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+  line-height: 1.45;
+}
+
+.yp-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.yp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 15px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  background: var(--chip-bg);
+  color: var(--ink);
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.yp-btn:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.yp-btn-primary {
+  background: #2371e1;
+  border-color: #2371e1;
+  color: #ffffff;
+}
+
+.yp-btn-primary:hover {
+  background: #5a2cb6;
+  border-color: #5a2cb6;
+  color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   5. Links Directory Page (links/index.html)
+   -------------------------------------------------------------------------- */
+.yp-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.yp-link-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+  min-width: 0;
+}
+
+.yp-link-tile-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.yp-link-cat {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.yp-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.yp-link-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
+  min-width: 0;
+}
+
+.yp-link-row:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.yp-link-row-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.yp-link-row-title {
+  font-size: 0.89rem;
+  font-weight: 700;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.yp-link-row-url {
+  font-size: 0.77rem;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.38;
+}
+
+.yp-lang-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  white-space: nowrap;
+}
+
+.yp-link-arrow {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   6. Bottom CTA Banner Card
+   -------------------------------------------------------------------------- */
+.yp-cta-card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--teal);
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 20px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.yp-cta-text {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.yp-cta-card h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.18rem;
+}
+
+.yp-cta-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+}

@@ -54,3 +54,17 @@ Website của bộ ứng dụng văn phòng Yomi-Office Open Source nằm trong 
 - CSS/JS dùng chung: `yomi-office/assets/office.css`, `office.js`; không tải tài nguyên từ máy chủ ngoài.
 - **WordPress** (mẫu *Blank*): nội dung sinh bằng `python3 tools/wp_inline_office.py` (style nội tuyến, không JS, nút English/Tiếng Việt chuyển giữa 2 bản, không liên kết về YomiHub) → `wp-export/yomi-office/`. Sửa trang GitHub ⇒ chạy lại lệnh này rồi cập nhật 8 trang WordPress.
 - 8 trang WordPress được tạo bằng cách **nhập tệp WXR** `wp-export/yomi-office/yomi-office-wordpress-import.xml` (trang cha `yomi-office` / `yomi-office-en`, mẫu *Blank*, mô tả SEO) qua WordPress.com MCP (`wpcom-content-import-*`) — trình duyệt tự động bị WordPress.com chặn bằng trang chống bot. Lần cập nhật sau: sửa nội dung từng trang (ID 9101–9104, 9111–9114) thay vì nhập lại để tránh tạo trùng.
+
+## Hệ sinh thái Yomi-Project (`projects/` & `links/`)
+
+Hai trang tổng quan và danh bạ liên kết chính thức cho hệ sinh thái 3 dự án mã nguồn mở **Yomi-Project** (YomiHub, Yomi-Tử Vi Ứng Dụng / Yomi-Applied Astrology, Yomi-Office Open Source). Song ngữ Việt/Anh ngay trong trang (mặc định Tiếng Việt, lưu lựa chọn vào `localStorage`, hỗ trợ `?lang=en` / `?lang=vi`).
+
+🌐 **https://yomihub-project.github.io/Yomi-Website/projects/** · **https://yomihub-project.github.io/Yomi-Website/links/**
+
+| Trang | GitHub Pages (song ngữ VI/EN) | WordPress – Tiếng Việt (dự kiến) | WordPress – English (planned) | Tệp xuất WordPress |
+|---|---|---|---|---|
+| Giới thiệu hệ sinh thái Yomi-Project | [projects/index.html](https://yomihub-project.github.io/Yomi-Website/projects/) | [https://yomihubproject.wordpress.com/yomi-project/](https://yomihubproject.wordpress.com/yomi-project/) | [https://yomihubproject.wordpress.com/yomi-project-en/](https://yomihubproject.wordpress.com/yomi-project-en/) | `wp-export/yomi-project/projects-vi.html`, `projects-en.html` |
+| Danh bạ liên kết chính thức | [links/index.html](https://yomihub-project.github.io/Yomi-Website/links/) | [https://yomihubproject.wordpress.com/yomi-project/lien-ket/](https://yomihubproject.wordpress.com/yomi-project/lien-ket/) | [https://yomihubproject.wordpress.com/yomi-project-en/links/](https://yomihubproject.wordpress.com/yomi-project-en/links/) | `wp-export/yomi-project/links-vi.html`, `links-en.html` |
+
+- CSS/JS dùng chung: kế thừa `assets/site.css` (phông Be Vietnam Pro tự lưu trữ) cùng `assets/yomi-project.css` và `assets/yomi-project.js`; không tải tài nguyên từ máy chủ ngoài, không dùng `<svg>` hay `background-clip: text` để đồng nhất giao diện với bản xuất WordPress.
+- **WordPress** (mẫu *Blank*, style nội tuyến `<!-- wp:html -->`, tách Việt/Anh): nội dung sinh bằng `python3 tools/wp_inline_yp.py . wp-export/yomi-project` → `wp-export/yomi-project/` (`projects-vi.html`, `projects-en.html`, `links-vi.html`, `links-en.html`). Sửa trang GitHub ⇒ chạy lại lệnh này rồi cập nhật 4 trang WordPress.
