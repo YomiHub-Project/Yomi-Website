@@ -32,4 +32,5 @@ Website của app Tử Vi nằm trong thư mục [`applied-astrology/`](applied-
 - Mã nguồn & bản cài: https://github.com/YomiHub-Project/Applied-Astrology-T-Vi- (mục **Releases**).
 - Mỗi bản phát hành: cập nhật phiên bản, tên tệp, dung lượng, bản cũ trong `applied-astrology/download.html` (12 link `releases/download/v<ver>/…`).
 - CSS/JS dùng chung: `applied-astrology/assets/aa.css`, `aa.js`; không tải tài nguyên từ máy chủ ngoài.
+- **WordPress** (https://yomihubproject.wordpress.com, mẫu *Blank*): 8 trang `tu-vi-ung-dung/` (+ `tai-xuong`, `huong-dan`, `chinh-sach-quyen-rieng-tu`) và `applied-astrology/` (+ `download`, `guide`, `privacy`). Nội dung sinh bằng `python3 tools/wp_inline_aa.py . wp-export/applied-astrology` (style nội tuyến, tách Việt/Anh, chữ gradient đổi sang màu đặc vì WordPress.com lọc `background-clip`). Sửa trang GitHub ⇒ chạy lại lệnh này rồi cập nhật trang WordPress.
 - Chuyển từ thư mục `docs/` của repo Applied-Astrology-T-Vi- ngày 27/11/2026; địa chỉ cũ `yomihub-project.github.io/Applied-Astrology-T-Vi-/` tự chuyển hướng về đây.
