@@ -61,10 +61,11 @@ Hai trang tổng quan và danh bạ liên kết chính thức cho hệ sinh thá
 
 🌐 **https://yomihub-project.github.io/Yomi-Website/projects/** · **https://yomihub-project.github.io/Yomi-Website/links/**
 
-| Trang | GitHub Pages (song ngữ VI/EN) | WordPress – Tiếng Việt (dự kiến) | WordPress – English (planned) | Tệp xuất WordPress |
+| Trang | GitHub Pages (song ngữ VI/EN) | WordPress – Tiếng Việt | WordPress – English | Tệp xuất WordPress |
 |---|---|---|---|---|
 | Giới thiệu hệ sinh thái Yomi-Project | [projects/index.html](https://yomihub-project.github.io/Yomi-Website/projects/) | [https://yomihubproject.wordpress.com/yomi-project/](https://yomihubproject.wordpress.com/yomi-project/) | [https://yomihubproject.wordpress.com/yomi-project-en/](https://yomihubproject.wordpress.com/yomi-project-en/) | `wp-export/yomi-project/projects-vi.html`, `projects-en.html` |
 | Danh bạ liên kết chính thức | [links/index.html](https://yomihub-project.github.io/Yomi-Website/links/) | [https://yomihubproject.wordpress.com/yomi-project/lien-ket/](https://yomihubproject.wordpress.com/yomi-project/lien-ket/) | [https://yomihubproject.wordpress.com/yomi-project-en/links/](https://yomihubproject.wordpress.com/yomi-project-en/links/) | `wp-export/yomi-project/links-vi.html`, `links-en.html` |
 
 - CSS/JS dùng chung: kế thừa `assets/site.css` (phông Be Vietnam Pro tự lưu trữ) cùng `assets/yomi-project.css` và `assets/yomi-project.js`; không tải tài nguyên từ máy chủ ngoài, không dùng `<svg>` hay `background-clip: text` để đồng nhất giao diện với bản xuất WordPress.
 - **WordPress** (mẫu *Blank*, style nội tuyến `<!-- wp:html -->`, tách Việt/Anh): nội dung sinh bằng `python3 tools/wp_inline_yp.py . wp-export/yomi-project` → `wp-export/yomi-project/` (`projects-vi.html`, `projects-en.html`, `links-vi.html`, `links-en.html`). Sửa trang GitHub ⇒ chạy lại lệnh này rồi cập nhật 4 trang WordPress.
+- 4 trang WordPress (mẫu *Blank*) được tạo qua WordPress.com MCP; lần cập nhật sau: sửa nội dung từng trang theo ID 9123–9126 (9123: `/yomi-project/`, 9124: `/yomi-project-en/`, 9125: `/yomi-project/lien-ket/`, 9126: `/yomi-project-en/links/`) thay vì tạo mới, để tránh trùng.
