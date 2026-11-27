@@ -107,11 +107,11 @@
         </a>
         <a class="dl-card" href="https://github.com/YomiHub-Project/Applied-Astrology-T-Vi-/releases/download/v0.0.7/Yomi-AppliedAstrology-0.0.7-windows-appx-install.bat" download title="Yomi-AppliedAstrology-0.0.7-windows-appx-install.bat">
           <span class="dl-btn"><svg class="dl-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3v11m0 0l-4.5-4.5M12 14l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-          <span class="dl-text"><strong>Trình cài appx (.bat)</strong><br><span class="dl-sub"><span class="vi-only">Chạy tệp này: tự cài chứng chỉ rồi cài gói</span><span class="en-only">Run this: installs the certificate, then the package</span></span><br><code>Yomi-AppliedAstrology-0.0.7-windows-appx-install.bat</code> · 1,7 KB</span>
+          <span class="dl-text"><strong><span class="vi-only">Trình cài appx</span><span class="en-only">AppX installer</span> (.bat)</strong><br><span class="dl-sub"><span class="vi-only">Chạy tệp này: tự cài chứng chỉ rồi cài gói</span><span class="en-only">Run this: installs the certificate, then the package</span></span><br><code>Yomi-AppliedAstrology-0.0.7-windows-appx-install.bat</code> · 1,7 KB</span>
         </a>
         <a class="dl-card" href="https://github.com/YomiHub-Project/Applied-Astrology-T-Vi-/releases/download/v0.0.7/Yomi-AppliedAstrology-0.0.7-signing-certificate.cer" download title="Yomi-AppliedAstrology-0.0.7-signing-certificate.cer">
           <span class="dl-btn"><svg class="dl-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3v11m0 0l-4.5-4.5M12 14l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-          <span class="dl-text"><strong>Chứng chỉ ký (.cer)</strong><br><span class="dl-sub"><span class="vi-only">Chứng chỉ tự ký dùng cho gói appx</span><span class="en-only">Self-signed certificate for the appx package</span></span><br><code>Yomi-AppliedAstrology-0.0.7-signing-certificate.cer</code> · 794 B</span>
+          <span class="dl-text"><strong><span class="vi-only">Chứng chỉ ký</span><span class="en-only">Signing certificate</span> (.cer)</strong><br><span class="dl-sub"><span class="vi-only">Chứng chỉ tự ký dùng cho gói appx</span><span class="en-only">Self-signed certificate for the appx package</span></span><br><code>Yomi-AppliedAstrology-0.0.7-signing-certificate.cer</code> · 794 B</span>
         </a>
       </div>
       <h3 class="dl-group"><span class="vi-only">🔐 Kiểm tra toàn vẹn</span><span class="en-only">🔐 Integrity check</span></h3>
@@ -158,33 +158,33 @@
         <tbody>
           <tr>
             <td><strong>Android</strong></td>
-            <td>APK (Signed, Zopfli compressed)</td>
+            <td>APK (<span class="vi-only">đã ký, nén Zopfli</span><span class="en-only">signed, Zopfli compressed</span>)</td>
             <td><span class="tag-arch">arm64-v8a</span> <span class="tag-arch">armeabi-v7a</span> <span class="tag-arch">x86_64</span></td>
-            <td>Android 6.0 (Marshmallow API 23) đến Android 17+</td>
+            <td>Android 6.0 (Marshmallow, API 23) <span class="vi-only">đến</span><span class="en-only">to</span> Android 17+</td>
           </tr>
           <tr>
             <td><strong>Windows (Setup)</strong></td>
-            <td>Setup.exe (bộ cài native / native installer)</td>
+            <td>Setup.exe (<span class="vi-only">bộ cài native</span><span class="en-only">native installer</span>)</td>
             <td><span class="tag-arch">x86</span> <span class="tag-arch">x64</span> <span class="tag-arch">arm64</span></td>
             <td>Windows 7 SP1, Windows 8, 10, 11 (.NET 4.5+)</td>
           </tr>
           <tr>
             <td><strong>Windows (Portable)</strong></td>
-            <td>Portable .zip (No installation)</td>
+            <td>Portable .zip (<span class="vi-only">không cần cài</span><span class="en-only">no installation</span>)</td>
             <td><span class="tag-arch">Any CPU</span></td>
-            <td>Giải nén chạy ngay, lưu cấu hình tại thư mục userdata</td>
+            <td><span class="vi-only">Giải nén chạy ngay, lưu cấu hình tại thư mục <code>userdata</code></span><span class="en-only">Unzip and run; settings are kept in the <code>userdata</code> folder</span></td>
           </tr>
           <tr>
             <td><strong>Windows (Store/AppX)</strong></td>
-            <td>.appxbundle (Modern Package)</td>
+            <td>.appxbundle (<span class="vi-only">gói hiện đại</span><span class="en-only">modern package</span>)</td>
             <td><span class="tag-arch">x86</span> <span class="tag-arch">x64</span> <span class="tag-arch">arm64</span></td>
-            <td>Windows 10, Windows 11 (Kèm chứng chỉ tự ký)</td>
+            <td>Windows 10, Windows 11 (<span class="vi-only">kèm chứng chỉ tự ký</span><span class="en-only">with self-signed certificate</span>)</td>
           </tr>
           <tr>
             <td><strong>Windows (MSI)</strong></td>
             <td>Windows Installer .msi</td>
             <td><span class="tag-arch">x64</span> <span class="tag-arch">x86</span> <span class="tag-arch">arm64</span></td>
-            <td>Hỗ trợ cài đặt quy mô doanh nghiệp và dòng lệnh im lặng</td>
+            <td><span class="vi-only">Hỗ trợ cài đặt quy mô doanh nghiệp và dòng lệnh im lặng</span><span class="en-only">Supports company-wide deployment and silent command-line install</span></td>
           </tr>
         </tbody>
       </table>
