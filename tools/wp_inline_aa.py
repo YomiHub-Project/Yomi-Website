@@ -4,7 +4,8 @@ import soupsieve as sv
 
 # 27/11/2026: bản cho website Tử Vi (applied-astrology/) – dựa trên tools/wp_inline.py.
 # Dùng: python3 tools/wp_inline_aa.py . wp-export/applied-astrology
-# Mỗi trang song ngữ được tách thành 2 trang WordPress (vi + en) vì WordPress không chạy JS đổi ngôn ngữ.
+# WordPress.com gói Free không chạy JS -> mỗi trang tách thành bản vi + en; nút English/Tiếng Việt chuyển sang trang ngôn ngữ kia.
+# Bản WordPress tách khỏi YomiHub: không có liên kết về trang YomiHub.
 SITE = sys.argv[1]; OUT = sys.argv[2]
 BASE = 'https://yomihub-project.github.io/Yomi-Website/'
 css = open(os.path.join(SITE, 'applied-astrology/assets/aa.css'), encoding='utf-8').read()
@@ -116,6 +117,13 @@ def convert(page):
         a2 = soup.new_tag('a', href=WP[other][page], attrs={'class': 'lang-toggle'})
         a2.string = 'English' if LANG == 'vi' else 'Tiếng Việt'
         btn.replace_with(a2)
+    # tách hẳn khỏi YomiHub: bỏ câu "Thuộc dự án YomiHub ·" ở chân trang
+    for lk in body.select('footer a'):
+        if lk.get_text(strip=True) == 'YomiHub':
+            sp = lk.find_parent(class_=('vi-only', 'en-only'))
+            nxt = sp.next_sibling if sp else None
+            if sp: sp.decompose()
+            if isinstance(nxt, str) and nxt.lstrip().startswith('·'): nxt.replace_with(nxt.lstrip()[1:].lstrip())
     for el in body.select('.vi-only, .en-only'): el.unwrap()
     for sv_ in body.select('.dl-btn svg'):
         sv_.replace_with('⬇')
