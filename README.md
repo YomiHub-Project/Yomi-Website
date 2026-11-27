@@ -4,16 +4,17 @@ Website chính thức của **YomiHub** – ứng dụng đọc truyện tranh, 
 
 🌐 **https://yomihub-project.github.io/Yomi-Website/**
 
-| Trang | Tiếng Việt | English |
-|---|---|---|
-| Trang Chủ | [index.html](https://yomihub-project.github.io/Yomi-Website/index.html) | [en/index.html](https://yomihub-project.github.io/Yomi-Website/en/index.html) |
-| Tải Về | [download.html](https://yomihub-project.github.io/Yomi-Website/download.html) | [en/download.html](https://yomihub-project.github.io/Yomi-Website/en/download.html) |
-| Hướng Dẫn | [guide.html](https://yomihub-project.github.io/Yomi-Website/guide.html) | [en/guide.html](https://yomihub-project.github.io/Yomi-Website/en/guide.html) |
-| Chính Sách Quyền Riêng Tư | [privacy.html](https://yomihub-project.github.io/Yomi-Website/privacy.html) | [en/privacy.html](https://yomihub-project.github.io/Yomi-Website/en/privacy.html) |
+| Trang | GitHub – Tiếng Việt | GitHub – English | WordPress – Tiếng Việt | WordPress – English |
+|---|---|---|---|---|
+| Trang Chủ | [index.html](https://yomihub-project.github.io/Yomi-Website/index.html) | [en/index.html](https://yomihub-project.github.io/Yomi-Website/en/index.html) | [https://yomihubproject.wordpress.com/](https://yomihubproject.wordpress.com/) | [https://yomihubproject.wordpress.com/en/](https://yomihubproject.wordpress.com/en/) |
+| Tải Về | [download.html](https://yomihub-project.github.io/Yomi-Website/download.html) | [en/download.html](https://yomihub-project.github.io/Yomi-Website/en/download.html) | [https://yomihubproject.wordpress.com/tai-ve/](https://yomihubproject.wordpress.com/tai-ve/) | [https://yomihubproject.wordpress.com/en-download/](https://yomihubproject.wordpress.com/en-download/) |
+| Hướng Dẫn | [guide.html](https://yomihub-project.github.io/Yomi-Website/guide.html) | [en/guide.html](https://yomihub-project.github.io/Yomi-Website/en/guide.html) | [https://yomihubproject.wordpress.com/huong-dan/](https://yomihubproject.wordpress.com/huong-dan/) | [https://yomihubproject.wordpress.com/en-guide/](https://yomihubproject.wordpress.com/en-guide/) |
+| Chính Sách Quyền Riêng Tư | [privacy.html](https://yomihub-project.github.io/Yomi-Website/privacy.html) | [en/privacy.html](https://yomihub-project.github.io/Yomi-Website/en/privacy.html) | [https://yomihubproject.wordpress.com/chinh-sach-quyen-rieng-tu/](https://yomihubproject.wordpress.com/chinh-sach-quyen-rieng-tu/) | [https://yomihubproject.wordpress.com/en-privacy/](https://yomihubproject.wordpress.com/en-privacy/) |
 
 - Mã nguồn ứng dụng & bản cài: https://github.com/YomiHub-Project/YomiHub-Project (mục **Releases**).
 - Trang Tải Về tự lấy liên kết bản mới nhất từ GitHub Releases.
 - Website tĩnh (HTML/CSS/JS), phông Be Vietnam Pro tự lưu trữ (`assets/fonts`, giấy phép OFL), không tải tài nguyên từ máy chủ ngoài.
+- **WordPress** (site https://yomihubproject.wordpress.com, mẫu *Blank*): nội dung sinh bằng `python3 tools/wp_inline.py . wp-export`.
 - Chuyển từ thư mục `docs/` của repo YomiHub-Project ngày 26/11/2026; địa chỉ cũ `yomihub-project.github.io/YomiHub-Project/` tự chuyển hướng về đây.
 
 ## Yomi-Tử Vi Ứng Dụng (Yomi-Applied Astrology)
@@ -22,15 +23,15 @@ Website của app Tử Vi nằm trong thư mục [`applied-astrology/`](applied-
 
 🌐 **https://yomihub-project.github.io/Yomi-Website/applied-astrology/**
 
-| Trang | Tệp |
-|---|---|
-| Trang Chủ | [applied-astrology/index.html](https://yomihub-project.github.io/Yomi-Website/applied-astrology/index.html) |
-| Tải Xuống | [applied-astrology/download.html](https://yomihub-project.github.io/Yomi-Website/applied-astrology/download.html) |
-| Hướng Dẫn Sử Dụng | [applied-astrology/guide.html](https://yomihub-project.github.io/Yomi-Website/applied-astrology/guide.html) |
-| Chính Sách Quyền Riêng Tư | [applied-astrology/privacy.html](https://yomihub-project.github.io/Yomi-Website/applied-astrology/privacy.html) |
+| Trang | GitHub (Việt/Anh, nút đổi ngôn ngữ) | WordPress – Tiếng Việt | WordPress – English |
+|---|---|---|---|
+| Trang Chủ | [applied-astrology/index.html](https://yomihub-project.github.io/Yomi-Website/applied-astrology/index.html) | [https://yomihubproject.wordpress.com/tu-vi-ung-dung/](https://yomihubproject.wordpress.com/tu-vi-ung-dung/) | [https://yomihubproject.wordpress.com/applied-astrology/](https://yomihubproject.wordpress.com/applied-astrology/) |
+| Tải Xuống | [applied-astrology/download.html](https://yomihub-project.github.io/Yomi-Website/applied-astrology/download.html) | [https://yomihubproject.wordpress.com/tu-vi-ung-dung/tai-xuong/](https://yomihubproject.wordpress.com/tu-vi-ung-dung/tai-xuong/) | [https://yomihubproject.wordpress.com/applied-astrology/download/](https://yomihubproject.wordpress.com/applied-astrology/download/) |
+| Hướng Dẫn Sử Dụng | [applied-astrology/guide.html](https://yomihub-project.github.io/Yomi-Website/applied-astrology/guide.html) | [https://yomihubproject.wordpress.com/tu-vi-ung-dung/huong-dan/](https://yomihubproject.wordpress.com/tu-vi-ung-dung/huong-dan/) | [https://yomihubproject.wordpress.com/applied-astrology/guide/](https://yomihubproject.wordpress.com/applied-astrology/guide/) |
+| Chính Sách Quyền Riêng Tư | [applied-astrology/privacy.html](https://yomihub-project.github.io/Yomi-Website/applied-astrology/privacy.html) | [https://yomihubproject.wordpress.com/tu-vi-ung-dung/chinh-sach-quyen-rieng-tu/](https://yomihubproject.wordpress.com/tu-vi-ung-dung/chinh-sach-quyen-rieng-tu/) | [https://yomihubproject.wordpress.com/applied-astrology/privacy/](https://yomihubproject.wordpress.com/applied-astrology/privacy/) |
 
 - Mã nguồn & bản cài: https://github.com/YomiHub-Project/Applied-Astrology-T-Vi- (mục **Releases**).
 - Mỗi bản phát hành: cập nhật phiên bản, tên tệp, dung lượng, bản cũ trong `applied-astrology/download.html` (12 link `releases/download/v<ver>/…`).
 - CSS/JS dùng chung: `applied-astrology/assets/aa.css`, `aa.js`; không tải tài nguyên từ máy chủ ngoài.
-- **WordPress** (https://yomihubproject.wordpress.com, mẫu *Blank*): 8 trang `tu-vi-ung-dung/` (+ `tai-xuong`, `huong-dan`, `chinh-sach-quyen-rieng-tu`) và `applied-astrology/` (+ `download`, `guide`, `privacy`). Nội dung sinh bằng `python3 tools/wp_inline_aa.py . wp-export/applied-astrology` (style nội tuyến, tách Việt/Anh – nút English/Tiếng Việt chuyển giữa 2 bản, không liên kết về YomiHub; chữ gradient đổi sang màu đặc vì WordPress.com lọc `background-clip`). Sửa trang GitHub ⇒ chạy lại lệnh này rồi cập nhật trang WordPress.
+- **WordPress** (mẫu *Blank*, link ở bảng trên): nội dung sinh bằng `python3 tools/wp_inline_aa.py . wp-export/applied-astrology` (style nội tuyến, tách Việt/Anh – nút English/Tiếng Việt chuyển giữa 2 bản, không liên kết về YomiHub; chữ gradient đổi sang màu đặc vì WordPress.com lọc `background-clip`). Sửa trang GitHub ⇒ chạy lại lệnh này rồi cập nhật 8 trang WordPress.
 - Chuyển từ thư mục `docs/` của repo Applied-Astrology-T-Vi- ngày 27/11/2026; địa chỉ cũ `yomihub-project.github.io/Applied-Astrology-T-Vi-/` tự chuyển hướng về đây.
