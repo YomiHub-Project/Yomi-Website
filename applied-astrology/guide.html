@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hướng Dẫn Sử Dụng - Yomi-Applied Astrology</title>
+  <meta name="description" content="Hướng dẫn sử dụng Yomi-Tử Vi Ứng Dụng: cài đặt trên Android/Windows, lập lá số, Âm lịch, thư viện Bửu Đình, luận giải, cài đặt, sao lưu.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%20%3Cdefs%3E%20%3ClinearGradient%20id%3D%22g%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2215%22%20y1%3D%2285%22%20x2%3D%2285%22%20y2%3D%2215%22%3E%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%231A9BB0%22/%3E%3Cstop%20offset%3D%22.5%22%20stop-color%3D%22%231F7BD6%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%235038CC%22/%3E%20%3C/linearGradient%3E%20%3C/defs%3E%20%3Crect%20x%3D%22.3%22%20y%3D%22.3%22%20width%3D%2299.4%22%20height%3D%2299.4%22%20rx%3D%2215%22%20fill%3D%22%23fff%22%20stroke%3D%22%23D9D9DE%22%20stroke-width%3D%22.6%22/%3E%20%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2241.5%22%20fill%3D%22url%28%23g%29%22/%3E%20%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2238.4%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%221.2%22/%3E%20%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2227.4%22%20fill%3D%22%23fff%22/%3E%20%3Cpath%20fill%3D%22url%28%23g%29%22%20d%3D%22M50%2024.9%20A25.1%2025.1%200%200%200%2050%2075.1%20A12.55%2012.55%200%200%200%2050%2050%20A12.55%2012.55%200%200%201%2050%2024.9%20Z%22/%3E%20%3Ccircle%20cx%3D%2250%22%20cy%3D%2237.6%22%20r%3D%224.0%22%20fill%3D%22url%28%23g%29%22/%3E%20%3Ccircle%20cx%3D%2250%22%20cy%3D%2262.4%22%20r%3D%224.0%22%20fill%3D%22%23fff%22/%3E%20%3C/svg%3E">
+  <link rel="canonical" href="https://yomihub-project.github.io/Yomi-Website/applied-astrology/guide.html">
+  <link rel="stylesheet" href="assets/aa.css">
+  <script src="assets/aa.js"></script>
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+
+  <header>
+    <a href="index.html" class="logo">
+      <div class="logo-badge logo-yomi"><svg aria-hidden="true" width="34" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <defs> <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="15" y1="85" x2="85" y2="15"> <stop offset="0" stop-color="#1A9BB0"/><stop offset=".5" stop-color="#1F7BD6"/><stop offset="1" stop-color="#5038CC"/> </linearGradient> </defs> <rect x=".3" y=".3" width="99.4" height="99.4" rx="15" fill="#fff" stroke="#D9D9DE" stroke-width=".6"/> <circle cx="50" cy="50" r="41.5" fill="url(#g)"/> <circle cx="50" cy="50" r="38.4" fill="none" stroke="#fff" stroke-width="1.2"/> <circle cx="50" cy="50" r="27.4" fill="#fff"/> <path fill="url(#g)" d="M50 24.9 A25.1 25.1 0 0 0 50 75.1 A12.55 12.55 0 0 0 50 50 A12.55 12.55 0 0 1 50 24.9 Z"/> <circle cx="50" cy="37.6" r="4.0" fill="url(#g)"/> <circle cx="50" cy="62.4" r="4.0" fill="#fff"/> </svg></div>
+      <span>Yomi-Applied Astrology</span>
+    </a>
+    <nav class="site-nav" aria-label="Trang / Pages">
+      <a href="index.html"><span class="vi-only">Trang Chủ</span><span class="en-only">Home</span></a>
+      <a href="download.html"><span class="vi-only">Tải Xuống</span><span class="en-only">Download</span></a>
+      <a href="guide.html" aria-current="page"><span class="vi-only">Hướng Dẫn Sử Dụng</span><span class="en-only">User Guide</span></a>
+      <a href="privacy.html"><span class="vi-only">Chính Sách Quyền Riêng Tư</span><span class="en-only">Privacy Policy</span></a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" onclick="toggleLanguage()"><span class="vi-only">English</span><span class="en-only">Tiếng Việt</span></button>
+      <a href="https://github.com/YomiHub-Project/Applied-Astrology-T-Vi-" class="btn-github">GitHub</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="narrow">
+    <div class="page-head">
+      <h1><span class="vi-only">Hướng Dẫn Sử Dụng</span><span class="en-only">User Guide</span></h1>
+      <p><span class="vi-only">Hướng dẫn cho Yomi-Tử Vi Ứng Dụng v0.0.7 trên Android và Windows: cài đặt, lập lá số, Âm lịch, thư viện, luận giải, cài đặt và sao lưu.</span><span class="en-only">Guide to Yomi-Applied Astrology v0.0.7 on Android and Windows: installing, building a chart, the lunar calendar, library, reading assistant, settings and backup.</span></p>
+    </div>
+    <nav class="toc" aria-label="Mục lục / Contents">
+      <a href="#cai-dat"><span class="vi-only">1. Cài đặt</span><span class="en-only">1. Installing</span></a>
+      <a href="#giao-dien"><span class="vi-only">2. Làm quen giao diện</span><span class="en-only">2. Getting around</span></a>
+      <a href="#la-so"><span class="vi-only">3. Lập lá số</span><span class="en-only">3. Building a chart</span></a>
+      <a href="#am-lich"><span class="vi-only">4. Âm Lịch</span><span class="en-only">4. Lunar calendar</span></a>
+      <a href="#thu-vien"><span class="vi-only">5. Thư Viện Bửu Đình</span><span class="en-only">5. Bửu Đình library</span></a>
+      <a href="#luan-giai"><span class="vi-only">6. Luận Giải</span><span class="en-only">6. Reading assistant</span></a>
+      <a href="#ho-so"><span class="vi-only">7. Hồ Sơ</span><span class="en-only">7. Profiles</span></a>
+      <a href="#tuy-chinh"><span class="vi-only">8. Cài Đặt</span><span class="en-only">8. Settings</span></a>
+      <a href="#cap-nhat"><span class="vi-only">9. Cập nhật & báo lỗi</span><span class="en-only">9. Updates & bug reports</span></a>
+      <a href="#du-lieu"><span class="vi-only">10. Sao lưu, dữ liệu & gỡ cài đặt</span><span class="en-only">10. Backup, data & uninstalling</span></a>
+      <a href="#hoi-dap"><span class="vi-only">11. Câu hỏi thường gặp</span><span class="en-only">11. FAQ</span></a>
+    </nav>
+
+    <section class="card" id="cai-dat">
+      <h2><span class="vi-only">1. Cài đặt</span><span class="en-only">1. Installing</span></h2>
+      <div class="vi-only"><h3>🤖 Android 6.0 trở lên</h3>
+<ol>
+  <li>Mở <a href="download.html">Trang Tải Xuống</a> trên điện thoại và tải tệp <code>.apk</code> (đa số máy dùng <code>arm64-v8a</code>).</li>
+  <li>Mở tệp vừa tải. Lần đầu, Android sẽ hỏi quyền <span class="ui">Cài ứng dụng không rõ nguồn gốc</span> cho trình duyệt hoặc trình quản lý tệp: bật quyền rồi quay lại.</li>
+  <li>Bấm <span class="ui">Cài đặt</span>, sau đó <span class="ui">Mở</span>.</li>
+</ol>
+<div class="tip">Đã có bản cũ? Cài đè trực tiếp, hồ sơ và cài đặt được giữ nguyên.</div>
+<h3>🪟 Windows – Setup.exe (khuyên dùng)</h3>
+<ol>
+  <li>Tải <code>Yomi-AppliedAstrology-0.0.7-windows-Setup.exe</code> và chạy.</li>
+  <li>Nếu SmartScreen cảnh báo (bộ cài dùng chứng chỉ tự ký): bấm <span class="ui">More info</span> › <span class="ui">Run anyway</span>.</li>
+  <li>Bộ cài <b>không cần quyền Admin</b>, cài vào <code>%LOCALAPPDATA%\Programs\Applied Astrology</code>, tạo lối tắt trên Desktop và Start Menu, có trình gỡ trong <span class="ui">Apps &amp; features</span>.</li>
+</ol>
+<h3>💼 Windows – Portable (không cần cài)</h3>
+<p>Giải nén <code>windows-portable.zip</code> vào thư mục bất kỳ (kể cả USB), chạy <code>AppliedAstrology.exe</code>. Dữ liệu lưu ngay trong thư mục <code>userdata</code> cạnh tệp chạy, nên có thể mang sang máy khác.</p>
+<h3>🏢 Windows – MSI</h3>
+<p>Chọn đúng kiến trúc: <code>x64</code> (phổ biến), <code>x86</code> (Windows 32-bit), <code>arm64</code> (Windows 10/11 trên ARM). Nhấp đúp để cài, hoặc cài im lặng: <code>msiexec /i Yomi-AppliedAstrology-0.0.7-windows-x64.msi /passive</code>.</p>
+<h3>🧩 Windows 10/11 – gói AppX</h3>
+<ol>
+  <li>Tải <b>cả 3 tệp</b> <code>.appxbundle</code>, <code>windows-appx-install.bat</code>, <code>signing-certificate.cer</code> vào <b>cùng một thư mục</b>.</li>
+  <li>Chạy <code>windows-appx-install.bat</code> và đồng ý khi Windows hỏi quyền Admin: tệp này cài chứng chỉ vào <i>Trusted People</i> rồi cài gói.</li>
+</ol>
+<div class="warn">Windows 7 SP1 chỉ có bản x86/x64 (Setup.exe, Portable, MSI) và cần <b>.NET Framework 4.5</b> trở lên. Windows 7 không có bản ARM.</div></div>
+      <div class="en-only"><h3>🤖 Android 6.0 and later</h3>
+<ol>
+  <li>Open the <a href="download.html">Download page</a> on your phone and get the <code>.apk</code> (most phones use <code>arm64-v8a</code>).</li>
+  <li>Open the downloaded file. The first time, Android asks to allow <span class="ui">Install unknown apps</span> for your browser or file manager: allow it and go back.</li>
+  <li>Tap <span class="ui">Install</span>, then <span class="ui">Open</span>.</li>
+</ol>
+<div class="tip">Already have an older version? Install over it; profiles and settings are kept.</div>
+<h3>🪟 Windows – Setup.exe (recommended)</h3>
+<ol>
+  <li>Download <code>Yomi-AppliedAstrology-0.0.7-windows-Setup.exe</code> and run it.</li>
+  <li>If SmartScreen warns you (the installer uses a self-signed certificate): click <span class="ui">More info</span> › <span class="ui">Run anyway</span>.</li>
+  <li>The installer needs <b>no admin rights</b>, installs to <code>%LOCALAPPDATA%\Programs\Applied Astrology</code>, adds Desktop and Start Menu shortcuts, and registers an uninstaller in <span class="ui">Apps &amp; features</span>.</li>
+</ol>
+<h3>💼 Windows – Portable (no install)</h3>
+<p>Unzip <code>windows-portable.zip</code> anywhere (a USB stick works), run <code>AppliedAstrology.exe</code>. Data is stored in the <code>userdata</code> folder next to the program, so you can carry it to another PC.</p>
+<h3>🏢 Windows – MSI</h3>
+<p>Pick the right architecture: <code>x64</code> (most PCs), <code>x86</code> (32-bit Windows), <code>arm64</code> (Windows 10/11 on ARM). Double-click to install, or silently: <code>msiexec /i Yomi-AppliedAstrology-0.0.7-windows-x64.msi /passive</code>.</p>
+<h3>🧩 Windows 10/11 – AppX package</h3>
+<ol>
+  <li>Download <b>all 3 files</b> <code>.appxbundle</code>, <code>windows-appx-install.bat</code>, <code>signing-certificate.cer</code> into <b>the same folder</b>.</li>
+  <li>Run <code>windows-appx-install.bat</code> and accept the admin prompt: it adds the certificate to <i>Trusted People</i>, then installs the package.</li>
+</ol>
+<div class="warn">Windows 7 SP1 has x86/x64 builds only (Setup.exe, Portable, MSI) and needs <b>.NET Framework 4.5</b> or later. There is no ARM build for Windows 7.</div></div>
+    </section>
+
+    <section class="card" id="giao-dien">
+      <h2><span class="vi-only">2. Làm quen giao diện</span><span class="en-only">2. Getting around</span></h2>
+      <div class="vi-only"><p>Ứng dụng có 6 tab ở thanh dưới (Android) hoặc thanh trên (Windows):</p>
+<div class="table-wrap"><table class="tabs-table">
+<thead><tr><th>Tab</th><th>Dùng để</th></tr></thead>
+<tbody>
+<tr><td><span class="ui">Lá Số</span></td><td>Nhập ngày giờ sinh, lập và xem lá số Tử Vi, xuất ảnh, mã QR, in.</td></tr>
+<tr><td><span class="ui">Âm Lịch</span></td><td>Lịch tháng Âm–Dương, chi tiết ngày, đổi ngày, bảng Lục Thập Hoa Giáp.</td></tr>
+<tr><td><span class="ui">Thư Viện</span></td><td>611 bài Bửu Đình trong 13 chương, tìm kiếm, đọc, đánh dấu.</td></tr>
+<tr><td><span class="ui">Luận Giải</span></td><td>Trợ lý luận giải ngoại tuyến dựa trên lá số đang mở.</td></tr>
+<tr><td><span class="ui">Hồ Sơ</span></td><td>Lá số đã lưu, bài đã đánh dấu, bài đọc gần đây.</td></tr>
+<tr><td><span class="ui">Cài Đặt</span></td><td>Ngôn ngữ, giao diện, cỡ chữ, bố cục, vòng sao, Liquid Glass, sao lưu, giới thiệu &amp; cập nhật.</td></tr>
+</tbody></table></div></div>
+      <div class="en-only"><p>The app has 6 tabs on the bottom bar (Android) or the top bar (Windows):</p>
+<div class="table-wrap"><table class="tabs-table">
+<thead><tr><th>Tab</th><th>What it is for</th></tr></thead>
+<tbody>
+<tr><td><span class="ui">Chart</span></td><td>Enter the birth date and hour, build and view the Tử Vi chart, export an image, QR code, print.</td></tr>
+<tr><td><span class="ui">Calendar</span></td><td>Solar–lunar month view, day details, date converter, sexagenary cycle table.</td></tr>
+<tr><td><span class="ui">Library</span></td><td>611 Bửu Đình articles in 13 chapters: search, read, bookmark.</td></tr>
+<tr><td><span class="ui">Reading</span></td><td>Offline reading assistant based on the open chart.</td></tr>
+<tr><td><span class="ui">Profiles</span></td><td>Saved charts, bookmarked articles, recently read.</td></tr>
+<tr><td><span class="ui">Settings</span></td><td>Language, theme, font size, layout, star rings, Liquid Glass, backup, about &amp; updates.</td></tr>
+</tbody></table></div></div>
+    </section>
+
+    <section class="card" id="la-so">
+      <h2><span class="vi-only">3. Lập lá số</span><span class="en-only">3. Building a chart</span></h2>
+      <div class="vi-only"><ol>
+  <li>Vào tab <span class="ui">Lá Số</span>, nhập <span class="ui">Họ và tên</span> và chọn <span class="ui">Giới tính</span>.</li>
+  <li>Chọn <span class="ui">Lịch</span>: <i>Dương lịch</i> hoặc <i>Âm lịch</i>. Nếu nhập âm lịch và sinh vào tháng nhuận, đánh dấu <span class="ui">Tháng nhuận</span>.</li>
+  <li>Nhập <span class="ui">Ngày</span>, <span class="ui">Tháng</span>, <span class="ui">Năm</span> và chọn <span class="ui">Giờ sinh</span> theo 12 canh giờ (Tí 23–01, Sửu 01–03, … Hợi 21–23).</li>
+  <li>Ô <span class="ui">Xem hạn năm</span> mặc định là năm nay; đổi số năm để xem tiểu hạn và sao lưu niên của năm khác.</li>
+  <li>Bấm <span class="ui">Lập lá số</span>.</li>
+</ol>
+<h3>Đọc lá số</h3>
+<ul>
+  <li><b>Thiên Bàn</b> ở giữa: ngày Dương/Âm, Can Chi năm–tháng–ngày–giờ, Âm Dương, Bản mệnh, Cục, Mệnh chủ, Thân chủ.</li>
+  <li><b>12 cung</b> xung quanh: chính tinh (có độ sáng Miếu/Vượng/Đắc/Bình/Hãm), cát tinh, sát tinh, trung tinh, sao lưu niên, Tuần/Triệt, đại hạn, tiểu hạn.</li>
+  <li><b>Chạm (bấm) vào một cung</b> để xem chi tiết, tam phương tứ chính và các bài bình giải liên quan của cụ Bửu Đình.</li>
+</ul>
+<h3>Các nút dưới lá số</h3>
+<ul>
+  <li><span class="ui">Lưu hồ sơ</span>: lưu để mở lại ở tab Hồ Sơ.</li>
+  <li><span class="ui">Xuất ảnh PNG</span>, <span class="ui">Chia sẻ</span>, <span class="ui">In</span>.</li>
+  <li><span class="ui">Mã QR</span>: mã chứa thông tin lá số, lưu lại để lập lại lá số sau này.</li>
+</ul>
+<div class="tip">Báo <i>“Ngày âm lịch không tồn tại”</i>: tháng âm đó chỉ có 29 ngày, hoặc năm đó không có tháng nhuận như bạn chọn. Dùng tab Âm Lịch › <span class="ui">Đổi ngày Dương ↔ Âm</span> để kiểm tra.</div></div>
+      <div class="en-only"><ol>
+  <li>Open the <span class="ui">Chart</span> tab, enter the <span class="ui">Full name</span> and pick the <span class="ui">Gender</span>.</li>
+  <li>Choose the <span class="ui">Calendar</span>: <i>Solar</i> or <i>Lunar</i>. For a lunar date in a leap month, tick <span class="ui">Leap month</span>.</li>
+  <li>Enter <span class="ui">Day</span>, <span class="ui">Month</span>, <span class="ui">Year</span> and pick the <span class="ui">Birth hour</span> from the 12 two-hour periods (Tí 23–01, Sửu 01–03, … Hợi 21–23).</li>
+  <li><span class="ui">Forecast year</span> defaults to the current year; change it to see the yearly period and annual stars of another year.</li>
+  <li>Press <span class="ui">Build chart</span>.</li>
+</ol>
+<h3>Reading the chart</h3>
+<ul>
+  <li><b>Heaven Plate</b> in the middle: solar/lunar date, stems and branches of year–month–day–hour, Yin–Yang, life element, element bureau, Life lord, Body lord.</li>
+  <li><b>12 palaces</b> around it: major stars (with brightness), auspicious, malefic and neutral stars, annual stars, Tuần/Triệt voids, decade and yearly periods.</li>
+  <li><b>Tap (click) a palace</b> to see its details, the triad and opposite palaces, and the related Bửu Đình commentary.</li>
+</ul>
+<h3>Buttons below the chart</h3>
+<ul>
+  <li><span class="ui">Save profile</span>: keep it in the Profiles tab.</li>
+  <li><span class="ui">Export PNG</span>, <span class="ui">Share</span>, <span class="ui">Print</span>.</li>
+  <li><span class="ui">QR code</span>: holds the chart data; keep it to rebuild the chart later.</li>
+</ul>
+<div class="tip"><i>“This lunar date does not exist”</i>: that lunar month has only 29 days, or the year has no such leap month. Check it in Calendar › <span class="ui">Solar ↔ lunar converter</span>.</div></div>
+    </section>
+
+    <section class="card" id="am-lich">
+      <h2><span class="vi-only">4. Âm Lịch</span><span class="en-only">4. Lunar calendar</span></h2>
+      <div class="vi-only"><ul>
+  <li>Lịch tháng hiển thị ngày Dương kèm ngày Âm (giờ Việt Nam GMT+7, năm 1900–2099). Bấm <span class="ui">Hôm nay</span> để quay về ngày hiện tại.</li>
+  <li><b>Chạm vào một ngày</b> để xem: Can Chi ngày–tháng–năm, tiết khí, ngày Hoàng đạo/Hắc đạo, Trực, giờ Tí đầu ngày, giờ hoàng đạo/hắc đạo, ngày lễ.</li>
+  <li>Từ chi tiết ngày, bấm <span class="ui">Lập lá số theo ngày này</span> để chuyển sang tab Lá Số với ngày đã điền sẵn.</li>
+  <li><span class="ui">Đổi ngày Dương ↔ Âm</span>: nhập một ngày, chọn chiều đổi, rồi <span class="ui">Xem ngày này</span>.</li>
+  <li><span class="ui">Lục Thập Hoa Giáp &amp; Nạp Âm</span>: bảng 60 năm Can Chi, mệnh nạp âm và các năm sinh tương ứng; <span class="ui">Tra năm sinh</span> để tìm nhanh, chạm một dòng để xem tuổi (âm).</li>
+</ul></div>
+      <div class="en-only"><ul>
+  <li>The month view shows each solar date with its lunar date (Vietnam time GMT+7, years 1900–2099). Press <span class="ui">Today</span> to jump back.</li>
+  <li><b>Tap a day</b> to see: day–month–year stems and branches, solar term, auspicious/inauspicious day, Officer (Trực), first hour, auspicious and inauspicious hours, holidays.</li>
+  <li>From the day details, press <span class="ui">Build a chart for this day</span> to open the Chart tab with the date filled in.</li>
+  <li><span class="ui">Solar ↔ lunar converter</span>: enter a date, pick the direction, then <span class="ui">Show this day</span>.</li>
+  <li><span class="ui">Sexagenary cycle &amp; Nạp Âm</span>: the 60 stem-branch years, their element and matching birth years; use <span class="ui">Look up year</span>, tap a row to see the lunar age.</li>
+</ul></div>
+    </section>
+
+    <section class="card" id="thu-vien">
+      <h2><span class="vi-only">5. Thư Viện Bửu Đình</span><span class="en-only">5. Bửu Đình library</span></h2>
+      <div class="vi-only"><ul>
+  <li>611 bài nguyên văn trong 13 chương: Chính Tinh, Can Tinh, Chi Tinh, Các Sao Khác, Các Cung, 72 Cách, An Sao, Hạn, Lá Số Nam, Lá Số Nữ, Từ Điển Tử Vi, 2 Chính Tinh, Các Bộ Sao.</li>
+  <li><b>Tìm kiếm</b>: gõ có dấu hoặc không dấu (ví dụ <code>thai duong</code> tìm được “Thái Dương”). Kết quả hiện theo trang, bấm <span class="ui">Xem thêm</span> để hiện tiếp.</li>
+  <li>Khi đọc: <span class="ui">Bài trước</span> / <span class="ui">Bài sau</span>, <span class="ui">Đánh dấu</span>, chỉnh <span class="ui">Cỡ chữ</span>. Mở lại thư viện sẽ có nút <span class="ui">Đọc tiếp</span>.</li>
+  <li>Nội dung giữ nguyên văn tiếng Việt. Khi giao diện ở ngôn ngữ khác, nút <span class="ui">Dịch trực tuyến</span> mở Google Dịch trong trình duyệt (cần mạng).</li>
+</ul></div>
+      <div class="en-only"><ul>
+  <li>611 original articles in 13 chapters: Major Stars, Stem Stars, Branch Stars, Other Stars, The Palaces, 72 Patterns, Placing the Stars, Periods, Male Charts, Female Charts, Tử Vi Dictionary, Major Star Pairs, Star Groups.</li>
+  <li><b>Search</b> with or without Vietnamese accents (e.g. <code>thai duong</code> finds “Thái Dương”). Results come in pages; press <span class="ui">Show more</span> for the next ones.</li>
+  <li>While reading: <span class="ui">Previous</span> / <span class="ui">Next</span>, <span class="ui">Bookmark</span>, <span class="ui">Font size</span>. Reopening the library offers <span class="ui">Continue reading</span>.</li>
+  <li>Articles stay in the author's original Vietnamese. With another interface language, <span class="ui">Translate online</span> opens Google Translate in your browser (needs Internet).</li>
+</ul></div>
+    </section>
+
+    <section class="card" id="luan-giai">
+      <h2><span class="vi-only">6. Luận Giải</span><span class="en-only">6. Reading assistant</span></h2>
+      <div class="vi-only"><ol>
+  <li>Lập (hoặc mở) một lá số trước – nếu chưa có, trợ lý sẽ nhắc <i>“Hãy lập lá số trước”</i>.</li>
+  <li>Vào tab <span class="ui">Luận Giải</span>: xem <span class="ui">Tổng quan lá số</span>, hoặc bấm nhanh <span class="ui">Cung Mệnh</span>, <span class="ui">Công danh</span>, <span class="ui">Tài lộc</span>, <span class="ui">Phu thê</span>, <span class="ui">Sức khỏe</span>, <span class="ui">Hạn năm nay</span>.</li>
+  <li>Hoặc gõ câu hỏi về cung, sao, đại hạn rồi bấm <span class="ui">Gửi</span>.</li>
+</ol>
+<p>Trợ lý chạy hoàn toàn trên máy, phân tích từ lá số hiện tại và kho bài Bửu Đình; <b>không cần mạng và không phải AI tạo sinh</b>.</p></div>
+      <div class="en-only"><ol>
+  <li>Build (or open) a chart first – otherwise the assistant says <i>“Please build a chart first”</i>.</li>
+  <li>Open the <span class="ui">Reading</span> tab: see the <span class="ui">Chart overview</span>, or tap <span class="ui">Life palace</span>, <span class="ui">Career</span>, <span class="ui">Wealth</span>, <span class="ui">Marriage</span>, <span class="ui">Health</span>, <span class="ui">This year</span>.</li>
+  <li>Or type a question about a palace, star or period and press <span class="ui">Send</span>.</li>
+</ol>
+<p>The assistant runs entirely on your device, using the current chart and the Bửu Đình library; <b>no Internet needed and it is not generative AI</b>.</p></div>
+    </section>
+
+    <section class="card" id="ho-so">
+      <h2><span class="vi-only">7. Hồ Sơ</span><span class="en-only">7. Profiles</span></h2>
+      <div class="vi-only"><ul>
+  <li><span class="ui">Lá số đã lưu</span>: <span class="ui">Mở</span> để xem lại, <span class="ui">Xóa</span> để bỏ.</li>
+  <li><span class="ui">Đã đánh dấu</span> và <span class="ui">Đọc gần đây</span>: mở nhanh bài trong thư viện.</li>
+</ul></div>
+      <div class="en-only"><ul>
+  <li><span class="ui">Saved charts</span>: <span class="ui">Open</span> to view again, <span class="ui">Delete</span> to remove.</li>
+  <li><span class="ui">Bookmarks</span> and <span class="ui">Recently read</span>: jump back to library articles.</li>
+</ul></div>
+    </section>
+
+    <section class="card" id="tuy-chinh">
+      <h2><span class="vi-only">8. Cài Đặt</span><span class="en-only">8. Settings</span></h2>
+      <div class="vi-only"><ul>
+  <li><span class="ui">Ngôn ngữ</span>: 68 ngôn ngữ giao diện.</li>
+  <li><span class="ui">Giao diện</span>: Huyền Không Tinh Tú (tối), Hoàng Triều Kim Sắc, Bạch Ngọc Cung Đình (sáng), Chu Sa Cát Tường. <span class="ui">Cỡ chữ</span>: Nhỏ / Vừa / Lớn / Rất lớn.</li>
+  <li><span class="ui">Bố cục lá số</span>: Tự động, Bàn 4×4 cổ điển, Danh sách 12 cung. <span class="ui">Chế độ màn hình lớn / Samsung DeX</span>: lá số và bình giải hiển thị song song 2 cột.</li>
+  <li><span class="ui">Hiển thị vòng sao</span>: bật/tắt Tràng Sinh, Bác Sĩ, Thái Tuế, Sao lưu niên. <span class="ui">Giấy lót nền lá số</span>: màu nền các cung như phần mềm gốc.</li>
+  <li><span class="ui">Sinh tháng nhuận</span>: <i>Tính như tháng chính</i> hoặc <i>Từ ngày 16 tính sang tháng sau</i>.</li>
+  <li><span class="ui">Liquid Glass (kính lỏng)</span>: bật/tắt; chế độ Tắt / Kính mờ (nhẹ, tiết kiệm pin) / Kính lỏng khúc xạ; nền Tinh vân / Cực quang / Phẳng; chỉnh độ mờ, độ khúc xạ, viền, độ phủ màu… và <span class="ui">Khôi phục Liquid Glass mặc định</span>. Máy yếu nên chọn Kính mờ hoặc Tắt.</li>
+</ul></div>
+      <div class="en-only"><ul>
+  <li><span class="ui">Language</span>: 68 interface languages.</li>
+  <li><span class="ui">Theme</span>: Celestial Midnight (dark), Imperial Gold, Ivory Palace (light), Cinnabar Fortune. <span class="ui">Font size</span>: Small / Medium / Large / Extra large.</li>
+  <li><span class="ui">Chart layout</span>: Automatic, Classic 4×4 board, 12-palace list. <span class="ui">Large screen / Samsung DeX mode</span>: chart and commentary side by side.</li>
+  <li><span class="ui">Show star rings</span>: Tràng Sinh, Bác Sĩ, Thái Tuế, annual stars. <span class="ui">Chart paper background</span>: palace colours as in the original software.</li>
+  <li><span class="ui">Born in a leap month</span>: <i>Count as the regular month</i> or <i>From day 16 count as next month</i>.</li>
+  <li><span class="ui">Liquid Glass</span>: on/off; Off / Frosted (light, saves battery) / Liquid refraction; Nebula / Aurora / Plain background; blur, refraction, bezel, tint… and <span class="ui">Reset</span>. On low-end devices choose Frosted or Off.</li>
+</ul></div>
+    </section>
+
+    <section class="card" id="cap-nhat">
+      <h2><span class="vi-only">9. Cập nhật & báo lỗi</span><span class="en-only">9. Updates & bug reports</span></h2>
+      <div class="vi-only"><p>Vào <span class="ui">Cài Đặt</span> › <span class="ui">Giới thiệu ứng dụng</span>:</p>
+<ul>
+  <li><span class="ui">Kiểm tra cập nhật</span>; bật/tắt <span class="ui">Tự động kiểm tra cập nhật khi mở ứng dụng</span> và <span class="ui">Tự cài đặt sau khi tải xong</span>.</li>
+  <li>Có bản mới: <span class="ui">Có gì mới</span> › <span class="ui">Tải về và cài đặt</span>. Android sẽ hỏi xác nhận; Windows tự đóng, cài bản mới rồi mở lại. Dữ liệu được giữ nguyên.</li>
+  <li><span class="ui">Chẩn đoán</span>: ghi/xem/xuất nhật ký, xem báo cáo lỗi, <span class="ui">Sao chép thông tin gỡ lỗi</span>.</li>
+  <li><span class="ui">Gửi báo cáo lỗi</span>: mở GitHub Issues với thông tin thiết bị điền sẵn; bạn xem lại trước khi gửi.</li>
+</ul>
+<p>Bạn cũng có thể tải bản mới thủ công ở <a href="download.html">Trang Tải Xuống</a> và cài đè.</p></div>
+      <div class="en-only"><p>Go to <span class="ui">Settings</span> › <span class="ui">About the app</span>:</p>
+<ul>
+  <li><span class="ui">Check for updates</span>; toggle <span class="ui">Check for updates automatically at start-up</span> and <span class="ui">Install automatically after download</span>.</li>
+  <li>New version: <span class="ui">What's new</span> › <span class="ui">Download and install</span>. Android asks for confirmation; Windows closes, installs and reopens. Your data is kept.</li>
+  <li><span class="ui">Diagnostics</span>: record/view/export logs, error reports, <span class="ui">Copy debug info</span>.</li>
+  <li><span class="ui">Report a bug</span>: opens GitHub Issues with device details pre-filled; review before submitting.</li>
+</ul>
+<p>You can also download the new version from the <a href="download.html">Download page</a> and install over the old one.</p></div>
+    </section>
+
+    <section class="card" id="du-lieu">
+      <h2><span class="vi-only">10. Sao lưu, dữ liệu & gỡ cài đặt</span><span class="en-only">10. Backup, data & uninstalling</span></h2>
+      <div class="vi-only"><ul>
+  <li><span class="ui">Cài Đặt</span> › <span class="ui">Sao lưu &amp; khôi phục</span>: <span class="ui">Xuất tệp sao lưu</span> (hồ sơ, đánh dấu, bài đọc gần đây, cài đặt), <span class="ui">Nhập từ tệp</span> hoặc <span class="ui">Dán nội dung JSON</span>. <span class="ui">Xóa dữ liệu ứng dụng</span> xóa toàn bộ hồ sơ và cài đặt.</li>
+  <li>Dữ liệu chỉ nằm trên máy: Windows bản cài ở <code>%APPDATA%\AppliedAstrology</code>, bản Portable ở <code>userdata\</code>; Android trong bộ nhớ riêng của ứng dụng.</li>
+  <li>Gỡ cài đặt: Android gỡ như ứng dụng thường (dữ liệu bị xóa theo – hãy sao lưu trước); Windows Setup/MSI/AppX gỡ trong <span class="ui">Apps &amp; features</span> (tên <i>Yomi-Applied Astrology</i>); Portable chỉ cần xóa thư mục.</li>
+</ul>
+<p>Chi tiết về dữ liệu và kết nối mạng: <a href="privacy.html">Chính Sách Quyền Riêng Tư</a>.</p></div>
+      <div class="en-only"><ul>
+  <li><span class="ui">Settings</span> › <span class="ui">Backup &amp; restore</span>: <span class="ui">Export backup file</span> (profiles, bookmarks, recently read, settings), <span class="ui">Import from file</span> or <span class="ui">Paste JSON</span>. <span class="ui">Clear app data</span> deletes all profiles and settings.</li>
+  <li>Data stays on your device: installed Windows builds use <code>%APPDATA%\AppliedAstrology</code>, Portable uses <code>userdata\</code>; Android uses the app's private storage.</li>
+  <li>Uninstall: on Android as any app (its data is removed too – back up first); Windows Setup/MSI/AppX from <span class="ui">Apps &amp; features</span> (<i>Yomi-Applied Astrology</i>); Portable: just delete the folder.</li>
+</ul>
+<p>More on data and network use: <a href="privacy.html">Privacy Policy</a>.</p></div>
+    </section>
+
+    <section class="card" id="hoi-dap">
+      <h2><span class="vi-only">11. Câu hỏi thường gặp</span><span class="en-only">11. FAQ</span></h2>
+      <div class="vi-only"><h3>Android báo “Ứng dụng chưa được cài đặt”?</h3>
+<p>Thường do sai kiến trúc: thử bản <code>armeabi-v7a</code>. Nếu đang có bản cài từ nguồn khác (chữ ký khác), gỡ bản đó trước.</p>
+<h3>Windows báo thiếu .NET hoặc không mở được trên Windows 7?</h3>
+<p>Cài .NET Framework 4.5 trở lên (Windows 8 trở đi đã có sẵn) và cập nhật Windows 7 lên SP1.</p>
+<h3>Cài AppX báo lỗi 0x800B0109?</h3>
+<p>Chứng chỉ chưa được tin cậy. Chạy lại <code>windows-appx-install.bat</code> và đồng ý quyền Admin, với cả 3 tệp nằm cùng thư mục.</p>
+<h3>Ứng dụng có cần Internet không?</h3>
+<p>Không. Mọi tính năng chạy ngoại tuyến; chỉ kiểm tra/tải cập nhật, Dịch trực tuyến và Gửi báo cáo lỗi mới dùng mạng.</p>
+<h3>Máy chạy chậm, cuộn giật?</h3>
+<p>Vào <span class="ui">Cài Đặt</span> › <span class="ui">Liquid Glass</span> chọn <i>Kính mờ</i> hoặc tắt hẳn.</p></div>
+      <div class="en-only"><h3>Android says “App not installed”?</h3>
+<p>Usually the wrong architecture: try the <code>armeabi-v7a</code> build. If a copy from another source (different signature) is installed, uninstall it first.</p>
+<h3>Windows asks for .NET or the app will not start on Windows 7?</h3>
+<p>Install .NET Framework 4.5 or later (built into Windows 8 and later) and make sure Windows 7 has SP1.</p>
+<h3>AppX install fails with 0x800B0109?</h3>
+<p>The certificate is not trusted yet. Run <code>windows-appx-install.bat</code> again and accept the admin prompt, with all 3 files in the same folder.</p>
+<h3>Does the app need Internet?</h3>
+<p>No. Everything works offline; only update checks/downloads, Translate online and Report a bug use the network.</p>
+<h3>Slow device, choppy scrolling?</h3>
+<p>Go to <span class="ui">Settings</span> › <span class="ui">Liquid Glass</span> and choose <i>Frosted</i> or turn it off.</p></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html"><span class="vi-only">Trang Chủ</span><span class="en-only">Home</span></a>
+      <a href="download.html"><span class="vi-only">Tải Xuống</span><span class="en-only">Download</span></a>
+      <a href="guide.html"><span class="vi-only">Hướng Dẫn Sử Dụng</span><span class="en-only">User Guide</span></a>
+      <a href="privacy.html"><span class="vi-only">Chính Sách Quyền Riêng Tư</span><span class="en-only">Privacy Policy</span></a>
+      <a href="https://github.com/YomiHub-Project/Applied-Astrology-T-Vi-/releases">GitHub Releases</a>
+    </div>
+    <p><span class="vi-only">Thuộc dự án <a href="../index.html">YomiHub</a></span><span class="en-only">Part of the <a href="../en/index.html">YomiHub</a> project</span> · © 2026 Yomi-Applied Astrology (Yomi-Tử Vi Ứng Dụng). <span class="vi-only">Dự án mã nguồn mở phục vụ nghiên cứu & ứng dụng tri thức cổ học.</span><span class="en-only">Open-source project for the study and practice of classical knowledge.</span></p>
+  </footer>
+  <button class="to-top" aria-label="Lên đầu trang / Back to top">↑</button>
+</body>
+</html>

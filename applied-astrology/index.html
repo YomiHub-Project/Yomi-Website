@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yomi-Tử Vi Ứng Dụng - Yomi-Applied Astrology</title>
+  <meta name="description" content="Yomi-Tử Vi Ứng Dụng: lập lá số Tử Vi theo phương pháp Bửu Đình, Âm lịch 1900–2099, thư viện 611 bài. Native Android 6.0+ và Windows 7+, ngoại tuyến.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%20%3Cdefs%3E%20%3ClinearGradient%20id%3D%22g%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2215%22%20y1%3D%2285%22%20x2%3D%2285%22%20y2%3D%2215%22%3E%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%231A9BB0%22/%3E%3Cstop%20offset%3D%22.5%22%20stop-color%3D%22%231F7BD6%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%235038CC%22/%3E%20%3C/linearGradient%3E%20%3C/defs%3E%20%3Crect%20x%3D%22.3%22%20y%3D%22.3%22%20width%3D%2299.4%22%20height%3D%2299.4%22%20rx%3D%2215%22%20fill%3D%22%23fff%22%20stroke%3D%22%23D9D9DE%22%20stroke-width%3D%22.6%22/%3E%20%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2241.5%22%20fill%3D%22url%28%23g%29%22/%3E%20%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2238.4%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%221.2%22/%3E%20%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2227.4%22%20fill%3D%22%23fff%22/%3E%20%3Cpath%20fill%3D%22url%28%23g%29%22%20d%3D%22M50%2024.9%20A25.1%2025.1%200%200%200%2050%2075.1%20A12.55%2012.55%200%200%200%2050%2050%20A12.55%2012.55%200%200%201%2050%2024.9%20Z%22/%3E%20%3Ccircle%20cx%3D%2250%22%20cy%3D%2237.6%22%20r%3D%224.0%22%20fill%3D%22url%28%23g%29%22/%3E%20%3Ccircle%20cx%3D%2250%22%20cy%3D%2262.4%22%20r%3D%224.0%22%20fill%3D%22%23fff%22/%3E%20%3C/svg%3E">
+  <link rel="canonical" href="https://yomihub-project.github.io/Yomi-Website/applied-astrology/">
+  <link rel="stylesheet" href="assets/aa.css">
+  <script src="assets/aa.js"></script>
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+
+  <header>
+    <a href="index.html" class="logo">
+      <div class="logo-badge logo-yomi"><svg aria-hidden="true" width="34" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> <defs> <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="15" y1="85" x2="85" y2="15"> <stop offset="0" stop-color="#1A9BB0"/><stop offset=".5" stop-color="#1F7BD6"/><stop offset="1" stop-color="#5038CC"/> </linearGradient> </defs> <rect x=".3" y=".3" width="99.4" height="99.4" rx="15" fill="#fff" stroke="#D9D9DE" stroke-width=".6"/> <circle cx="50" cy="50" r="41.5" fill="url(#g)"/> <circle cx="50" cy="50" r="38.4" fill="none" stroke="#fff" stroke-width="1.2"/> <circle cx="50" cy="50" r="27.4" fill="#fff"/> <path fill="url(#g)" d="M50 24.9 A25.1 25.1 0 0 0 50 75.1 A12.55 12.55 0 0 0 50 50 A12.55 12.55 0 0 1 50 24.9 Z"/> <circle cx="50" cy="37.6" r="4.0" fill="url(#g)"/> <circle cx="50" cy="62.4" r="4.0" fill="#fff"/> </svg></div>
+      <span>Yomi-Applied Astrology</span>
+    </a>
+    <nav class="site-nav" aria-label="Trang / Pages">
+      <a href="index.html" aria-current="page"><span class="vi-only">Trang Chủ</span><span class="en-only">Home</span></a>
+      <a href="download.html"><span class="vi-only">Tải Xuống</span><span class="en-only">Download</span></a>
+      <a href="guide.html"><span class="vi-only">Hướng Dẫn Sử Dụng</span><span class="en-only">User Guide</span></a>
+      <a href="privacy.html"><span class="vi-only">Chính Sách Quyền Riêng Tư</span><span class="en-only">Privacy Policy</span></a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" onclick="toggleLanguage()"><span class="vi-only">English</span><span class="en-only">Tiếng Việt</span></button>
+      <a href="https://github.com/YomiHub-Project/Applied-Astrology-T-Vi-" class="btn-github">GitHub</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="vi-only">✨ Ứng Dụng Tử Vi Đa Nền Tảng – 100% Native Không WebView</span>
+        <span class="en-only">✨ Cross-Platform Native Astrology – 100% Native, No WebView</span>
+      </div>
+
+      <h1>
+        <span class="vi-only">Yomi-Tử Vi Ứng Dụng & Âm Lịch Thiên Văn</span>
+        <span class="en-only">Yomi-Applied Astrology & Astronomical Lunar Calendar</span>
+      </h1>
+
+      <p>
+        <span class="vi-only">Dựa trên tinh hoa Tử Vi phương Đông và tài liệu Bửu Đình, kết hợp cùng thuật toán thiên văn học. Hoạt động ngoại tuyến 100%, tôn trọng quyền riêng tư, mượt mà trên cả Android và Windows.</span>
+        <span class="en-only">Based on Eastern astrological wisdom and Bửu Đình's master library, powered by astronomical algorithms. 100% offline-first, privacy-respecting, and smooth across Android and Windows.</span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="download.html" class="btn-primary">
+          <span class="vi-only">⬇️ Tải Xuống v0.0.7</span>
+          <span class="en-only">⬇️ Download v0.0.7</span>
+        </a>
+        <a href="guide.html" class="btn-secondary">
+          <span class="vi-only">📖 Hướng Dẫn Sử Dụng</span>
+          <span class="en-only">📖 User Guide</span>
+        </a>
+      </div>
+
+      <div class="platforms-bar">
+        <div class="platform-item">📱 Android 6.0+ (ARM64 / ARMv7 / x86_64)</div>
+        <div class="platform-item">💻 Windows 7 SP1+ (Setup / Portable / MSI / AppX)</div>
+        <div class="platform-item">⚡ 0 Trình duyệt nhúng (0 WebView / GDI+ Native)</div>
+        <div class="platform-item">🌐 68 Ngôn ngữ giao diện</div>
+      </div>
+    </section>
+
+    <div class="section-title">
+      <h2>
+        <span class="vi-only">Tính Năng Nổi Bật</span>
+        <span class="en-only">Core Features</span>
+      </h2>
+      <p>
+        <span class="vi-only">Được thiết kế tối ưu hóa tốc độ, dung lượng siêu nhẹ và trải nghiệm người dùng cao cấp</span>
+        <span class="en-only">Engineered for extreme performance, minimal footprint, and premium user experience</span>
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <!-- Feature 1: Lá số Tử Vi -->
+      <div class="feature-card">
+        <div class="feature-icon">📜</div>
+        <h3>
+          <span class="vi-only">Lập Lá Số Tử Vi Theo Phương Pháp Bửu Đình</span>
+          <span class="en-only">Detailed Natal Charts (Bửu Đình Method)</span>
+        </h3>
+        <p>
+          <span class="vi-only">An đủ 14 chính tinh (Miếu/Vượng/Đắc/Bình/Hãm) và hơn 70 phụ tinh, Tứ Hóa, Tuần/Triệt, vòng Tràng Sinh – Bác Sĩ – Thái Tuế, đại hạn, tiểu hạn, sao lưu niên, Mệnh chủ/Thân chủ, Mệnh–Cục theo phương pháp Bửu Đình. Xuất ảnh PNG, mã QR, in và lưu nhiều hồ sơ.</span>
+          <span class="en-only">Places all 14 major stars (with brightness) and 70+ minor stars, the Four Transformations, Tuần/Triệt, the Long Life – Doctor – Grand Duke rings, 10-year and yearly periods, annual stars and the Life/Body masters following the Bửu Đình method. Export PNG, QR code, print and keep many profiles.</span>
+        </p>
+      </div>
+
+      <!-- Feature 2: Âm Lịch -->
+      <div class="feature-card">
+        <div class="feature-icon">🌙</div>
+        <h3>
+          <span class="vi-only">Âm Lịch & Lịch Vạn Niên 1900–2099</span>
+          <span class="en-only">Astronomical Lunar Calendar 1900–2099</span>
+        </h3>
+        <p>
+          <span class="vi-only">Âm lịch Việt Nam (GMT+7) theo thuật toán Hồ Ngọc Đức, đã kiểm tra liên tục 73.018 ngày từ 1900 đến 2099 (không có ngày không hợp lệ, đổi Âm↔Dương khớp hai chiều). Can Chi, nạp âm, 24 tiết khí, ngày Hoàng đạo/Hắc đạo, 12 Trực, giờ hoàng đạo, ngày lễ.</span>
+          <span class="en-only">Vietnamese lunar calendar (GMT+7) using Hồ Ngọc Đức's algorithm, checked on all 73,018 days from 1900 to 2099 (no invalid day, lunar↔solar conversion round-trips). Stems and branches, Nạp Âm, 24 solar terms, auspicious days and hours, 12 Trực, holidays.</span>
+        </p>
+      </div>
+
+      <!-- Feature 3: Thư viện 611 bài -->
+      <div class="feature-card">
+        <div class="feature-icon">📚</div>
+        <h3>
+          <span class="vi-only">Thư Viện Bửu Đình 611 Bài Luận</span>
+          <span class="en-only">Bửu Đình Master Library (611 Articles)</span>
+        </h3>
+        <p>
+          <span class="vi-only">611 bài nguyên văn trong 13 chương của sách Bửu Đình: chính tinh, phụ tinh, các cung, 72 cách, an sao, hạn, lá số mẫu, từ điển… Tìm kiếm có dấu hoặc không dấu ngay trên máy, đánh dấu, đọc tiếp, chỉnh cỡ chữ.</span>
+          <span class="en-only">611 original articles in 13 chapters of the Bửu Đình books: major and minor stars, palaces, the 72 patterns, star placement, periods, sample charts, a dictionary… Search with or without Vietnamese accents on the device, bookmarks, continue reading, adjustable text size.</span>
+        </p>
+      </div>
+
+      <!-- Feature 4: Trợ lý luận giải -->
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>
+          <span class="vi-only">Trợ Lý Tra Cứu & Luận Giải</span>
+          <span class="en-only">Astrological Research Assistant</span>
+        </h3>
+        <p>
+          <span class="vi-only">Hỏi về cung, sao, đại hạn hoặc chọn nhanh Cung Mệnh, Công danh, Tài lộc, Phu thê, Sức khỏe, Hạn năm nay. Trợ lý phân tích lá số hiện tại và trích các bài Bửu Đình liên quan – chạy ngoại tuyến, không phải AI tạo sinh.</span>
+          <span class="en-only">Ask about a palace, star or period, or pick Life palace, Career, Wealth, Marriage, Health or This year. The assistant analyses the current chart and quotes the related Bửu Đình articles – fully offline, not generative AI.</span>
+        </p>
+      </div>
+
+      <!-- Feature 5: Liquid Glass -->
+      <div class="feature-card">
+        <div class="feature-icon">💎</div>
+        <h3>
+          <span class="vi-only">Hiệu Ứng Liquid Glass (Bật / Tắt)</span>
+          <span class="en-only">Liquid Glass Engine (With On/Off Switch)</span>
+        </h3>
+        <p>
+          <span class="vi-only">Thanh tiêu đề, thanh tab và hộp thoại khúc xạ kiểu kính lỏng; thẻ dùng kính mờ. Phần tính ảnh chạy ở luồng nền, có bộ nhớ đệm, để cuộn mượt hơn. Có công tắc Bật/Tắt và chế độ Kính mờ cho máy cấu hình thấp.</span>
+          <span class="en-only">Liquid-glass refraction on the title bar, tab bar and dialogs, frosted glass on cards. Image work runs on a background thread with caches for smoother scrolling. On/Off switch and a lighter frosted mode for low-end devices.</span>
+        </p>
+      </div>
+
+      <!-- Feature 6: Đa ngôn ngữ & Cập nhật -->
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3>
+          <span class="vi-only">68 Ngôn Ngữ & Kiểm Tra Cập Nhật</span>
+          <span class="en-only">68 Languages & Auto-Update Check</span>
+        </h3>
+        <p>
+          <span class="vi-only">Giao diện có 68 ngôn ngữ. Ứng dụng tự kiểm tra bản mới trên GitHub Releases (có thể tắt), tải và cài đè, dữ liệu được giữ nguyên.</span>
+          <span class="en-only">Localized into 68 international languages. The built-in checker looks for new versions on GitHub Releases (can be turned off), downloads and installs over the old one, keeping your data.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="text-align:center;margin-top:3rem;">
+      <h2><span class="vi-only">Bắt đầu sử dụng</span><span class="en-only">Get started</span></h2>
+      <p><span class="vi-only">Tải bản phù hợp với thiết bị của bạn, rồi xem hướng dẫn từng bước: lập lá số, tra Âm lịch, đọc thư viện và luận giải.</span><span class="en-only">Download the build for your device, then follow the step-by-step guide: build a chart, use the lunar calendar, read the library and get a reading.</span></p>
+      <div class="cta-row">
+        <a href="download.html" class="btn-primary"><span class="vi-only">Trang Tải Xuống</span><span class="en-only">Download page</span></a>
+        <a href="guide.html" class="btn-secondary"><span class="vi-only">Hướng Dẫn Sử Dụng</span><span class="en-only">User Guide</span></a>
+        <a href="privacy.html" class="btn-secondary"><span class="vi-only">Chính Sách Quyền Riêng Tư</span><span class="en-only">Privacy Policy</span></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html"><span class="vi-only">Trang Chủ</span><span class="en-only">Home</span></a>
+      <a href="download.html"><span class="vi-only">Tải Xuống</span><span class="en-only">Download</span></a>
+      <a href="guide.html"><span class="vi-only">Hướng Dẫn Sử Dụng</span><span class="en-only">User Guide</span></a>
+      <a href="privacy.html"><span class="vi-only">Chính Sách Quyền Riêng Tư</span><span class="en-only">Privacy Policy</span></a>
+      <a href="https://github.com/YomiHub-Project/Applied-Astrology-T-Vi-/releases">GitHub Releases</a>
+    </div>
+    <p><span class="vi-only">Thuộc dự án <a href="../index.html">YomiHub</a></span><span class="en-only">Part of the <a href="../en/index.html">YomiHub</a> project</span> · © 2026 Yomi-Applied Astrology (Yomi-Tử Vi Ứng Dụng). <span class="vi-only">Dự án mã nguồn mở phục vụ nghiên cứu & ứng dụng tri thức cổ học.</span><span class="en-only">Open-source project for the study and practice of classical knowledge.</span></p>
+  </footer>
+  <button class="to-top" aria-label="Lên đầu trang / Back to top">↑</button>
+</body>
+</html>
