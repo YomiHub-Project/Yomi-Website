@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Guide – Yomi-Office Open Source v0.1.8</title>
+  <meta name="description" content="Complete user guide for Yomi-Office Open Source v0.1.8 on Android and Windows: installing, Home &amp; On This Device, Word, 525-function Excel, PowerPoint, PDF &amp; OCR, CamScanner, MathType, A.I Assistant (Free Claude Code), DeX, and updates.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="canonical" href="https://yomihub-project.github.io/Yomi-Website/yomi-office/en/guide.html">
+  <link rel="alternate" hreflang="vi" href="https://yomihub-project.github.io/Yomi-Website/yomi-office/guide.html">
+  <link rel="alternate" hreflang="en" href="https://yomihub-project.github.io/Yomi-Website/yomi-office/en/guide.html">
+  <link rel="stylesheet" href="../assets/office.css">
+  <script src="../assets/office.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"><img src="../assets/logo.png" alt=""><span>Yomi-Office Open Source</span></a>
+    <nav class="site-nav" aria-label="Pages">
+      <a href="index.html">Home</a>
+      <a href="download.html">Download</a>
+      <a href="guide.html" aria-current="page">User Guide</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="lang-switch" href="../guide.html" hreflang="vi" lang="vi">🌐 Tiếng Việt</a>
+      <a class="btn-github" href="https://github.com/YomiHub-Project/Yomi-Office-Open-Source">GitHub</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-hero">
+      <div class="hero-inner">
+        <div class="hero-badge">Step-by-step Documentation · Version 0.1.8</div>
+        <h1>User Guide</h1>
+        <p>From installing on Android and Windows to Word editing, cross-workbook Excel formulas, offline OCR, A.I Assistant (Free Claude Code), and Samsung DeX.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <nav class="toc" aria-label="Table of Contents">
+        <b>Contents</b>
+        <ol>
+          <li><a href="#install-android">Installing on Android</a></li>
+          <li><a href="#install-windows">Installing on Windows</a></li>
+          <li><a href="#home-screen">Home Screen &amp; On This Device</a></li>
+          <li><a href="#word">Word (Document Editor)</a></li>
+          <li><a href="#excel">Excel (525 Functions &amp; Links)</a></li>
+          <li><a href="#powerpoint">PowerPoint (Presentations)</a></li>
+          <li><a href="#pdf">PDF &amp; Offline OCR</a></li>
+          <li><a href="#camscanner">CamScanner (Document Scan)</a></li>
+          <li><a href="#mathtype">MathType (Equations)</a></li>
+          <li><a href="#ai-assistant">A.I Assistant &amp; Free Claude Code</a></li>
+          <li><a href="#cloud">Cloud Storage &amp; Conflicts</a></li>
+          <li><a href="#dex-tv">Samsung DeX, TV &amp; Quick Share</a></li>
+          <li><a href="#updates">Software Updates</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+        </ol>
+      </nav>
+
+      <div class="prose">
+        <h2 id="install-android">1. Installing on Android</h2>
+        <ol class="steps">
+          <li>Open <a href="download.html#android">Download › Android</a> on your phone and download the matching <code>.apk</code> for your Android version and CPU (most phones from 2016 onward use <b>Android 10+ arm64-v8a</b>).</li>
+          <li>Tap the downloaded <code>.apk</code>. On first sideload, Android prompts you to enable <b>Install unknown apps</b> for your browser or file manager — turn it on, return, and tap <b>Install</b>.</li>
+          <li>On first launch on <b>Android 11 or newer</b>, grant <b>All files access</b> so the <b>On This Device</b> tab can scan and save Office files directly in <code>Documents</code> and <code>Download</code>.</li>
+        </ol>
+        <div class="note ok">Already have v0.1.7 or older? Just install the v0.1.8 APK over it — your settings, pinned files, and local notes stay intact.</div>
+
+        <h2 id="install-windows">2. Installing on Windows</h2>
+        <ul>
+          <li><b>Setup (.exe) — recommended:</b> Download <code>Yomi-Office-Open-Source-0.1.8-Win10-11-x64-Setup.exe</code> (or the <code>Win7-8.1</code> package on Windows 7/8.1) and run it. Because the installer is self-signed, SmartScreen may appear — click <b>More info</b> → <b>Run anyway</b>.</li>
+          <li><b>.msi Installer (new in v0.1.8):</b> Double-click for standard Windows Installer UI, or run silently via <code>msiexec /i Yomi-Office-Open-Source-0.1.8-Win10-11-x64.msi /passive</code>.</li>
+          <li><b>Portable (.zip):</b> Extract to any folder or USB drive and launch directly — no Admin privileges required and no Registry footprint.</li>
+          <li><b>.appxbundle (Windows 10 1809+ / 11):</b> Download <code>Yomi-Office-Open-Source-0.1.8-DevCert.cer</code> alongside the bundle, double-click the <code>.cer</code> file → <b>Install Certificate</b> → <b>Local Machine</b> → <b>Trusted People</b>, then open the <code>.appxbundle</code>.</li>
+        </ul>
+        <div class="note warn"><b>Windows 7 SP1 &amp; 8.1:</b> Be sure to download a build from the <b>Win7-8.1</b> group (x64 or x86) or the Universal AnyCPU package. Windows 7 has no ARM64 build and requires .NET Framework 4.6.2+.</div>
+
+        <h2 id="home-screen">3. Home Screen &amp; On This Device</h2>
+        <p>Your start screen organizes documents into three clear tabs:</p>
+        <ul>
+          <li><b>Recent:</b> Files you recently opened or created.</li>
+          <li><b>Pinned:</b> Keep important files pinned at the top for one-tap access.</li>
+          <li><b>On This Device (v0.1.8):</b> Automatically scans your Documents, Downloads, and storage folders at launch and lists every Word, Excel, and PowerPoint file. Use the <b>Rescan</b> button anytime after copying new files to your device.</li>
+        </ul>
+
+        <h2 id="word">4. Word — Document Authoring</h2>
+        <ul>
+          <li>Opens and saves standard <code>.docx</code>, <code>.docm</code> (with VBA macros), <code>.odt</code>, <code>.rtf</code>, and <code>.txt</code>; exports cleanly to <code>.pdf</code>.</li>
+          <li><b>Full Ribbon layout:</b> Format fonts, paragraphs, alignment, tables, images, charts, headers/footers, page numbers, automatic tables of contents, footnotes, and math equations.</li>
+          <li><b>Rulers &amp; real pagination:</b> Displays margins, tab stops, page breaks, and section breaks matching print output.</li>
+          <li><b>Mail Merge:</b> Pull rows from an Excel spreadsheet or CSV file to batch-generate letters, invoices, or certificates.</li>
+        </ul>
+
+        <h2 id="excel">5. Excel — Spreadsheets, 525 Functions &amp; Links</h2>
+        <ul>
+          <li><b>525 Excel 365 functions:</b> Supports classic formulas (<code>SUM</code>, <code>VLOOKUP</code>, <code>INDEX/MATCH</code>, <code>IFERROR</code>) plus modern dynamic-array functions such as <code>XLOOKUP</code>, <code>FILTER</code>, <code>SORT</code>, <code>UNIQUE</code>, <code>LAMBDA</code>, <code>LET</code>, <code>GROUPBY</code>, and <code>PIVOTBY</code>.</li>
+          <li><b>Cross-sheet references:</b> Reference cells across worksheets with <code>=SUM(Sheet2!A1:A20)</code> or <code>=Sheet2!B5 * 1.1</code>.</li>
+          <li><b>3D sheet-range formulas:</b> Aggregate across consecutive sheets with <code>=SUM(Sheet1:Sheet3!A1)</code>.</li>
+          <li><b>Multi-workbook links:</b> Pull values from external workbooks using <code>=[Book2.xlsx]Data!A1</code> — ideal for roll-up financial or inventory sheets.</li>
+          <li><b>Analysis &amp; automation:</b> PivotTables, conditional formatting, data validation rules, and a built-in VBA macro editor (press <code>Alt+F11</code> on Windows to edit code or <code>Alt+F8</code> to run macros inside <code>.xlsm</code> files).</li>
+        </ul>
+
+        <h2 id="powerpoint">6. PowerPoint — Slide Decks &amp; Presenter View</h2>
+        <ul>
+          <li>Edit <code>.pptx</code>, <code>.pptm</code>, and <code>.odp</code> decks with slide layouts, templates, transitions, and animations written back to standard `.pptx` files.</li>
+          <li><b>Presenter Console:</b> View speaker notes, timer, and next-slide preview on your screen while the external monitor shows only the full-screen presentation.</li>
+          <li><b>Voice Narration:</b> Record spoken audio directly onto individual slides.</li>
+        </ul>
+
+        <h2 id="pdf">7. PDF &amp; Offline OCR</h2>
+        <ul>
+          <li><b>Read &amp; annotate:</b> Highlight, underline, freehand draw, add sticky notes, and sign PDF documents.</li>
+          <li><b>Document tools:</b> Merge multiple PDFs, split pages, compress file size, extract embedded images, and add or remove PDF passwords.</li>
+          <li><b>Bidirectional conversion:</b> Images ↔ PDF, and PDF → Word / PowerPoint / Excel / archival PDF-A.</li>
+          <li><b>Offline Vietnamese &amp; English OCR:</b> Extract searchable text (<code>vie + eng</code>) from scanned PDFs and photos without uploading files to external servers.</li>
+        </ul>
+
+        <h2 id="camscanner">8. CamScanner — Document Scanning</h2>
+        <ol class="steps">
+          <li>Open <b>CamScanner</b> inside Yomi-Office and point your camera at a printed page, receipt, or ID document.</li>
+          <li>The scanner detects the 4 paper corners automatically; adjust the corners if needed and apply perspective correction.</li>
+          <li>Choose a filter (<i>Black &amp; White Document</i>, <i>High Contrast</i>, or <i>Original Color</i>), combine multiple pages, and export to PDF or run OCR immediately.</li>
+        </ol>
+
+        <h2 id="mathtype">9. MathType — Equations</h2>
+        <p>Write formulas using <b>LaTeX</b> or <b>MathML</b> syntax with live preview, then insert them directly into Word documents or PowerPoint slides.</p>
+
+        <h2 id="ai-assistant">10. A.I Assistant &amp; Free Claude Code</h2>
+        <p>Choose between five modes depending on whether you want pure offline privacy or online models:</p>
+        <ul>
+          <li><b>Offline mode:</b> Basic drafting, spellcheck, and formatting helpers with zero network traffic.</li>
+          <li><b>No-login Web A.I:</b> Quick access to ChatGPT, Copilot, or Grok in the integrated panel.</li>
+          <li><b>Signed-in Web A.I:</b> Use your own Gemini, Claude, or DeepSeek session.</li>
+          <li><b>Personal API key:</b> Enter your OpenAI / Anthropic / Gemini API key — stored locally (encrypted via <b>Windows DPAPI</b> on Windows) and sent only to your chosen provider.</li>
+          <li><b>Local Models &amp; Free Claude Code (new in v0.1.8):</b> Connect <b>Ollama</b>, <b>LM Studio</b>, or <b>Free Claude Code</b>. Running <code>fcc-server</code> on your PC listens by default on <code>http://127.0.0.1:8082</code>. On an <b>Android phone</b> on the same Wi-Fi network, open <i>A.I Assistant → Settings → Free Claude Code</i> and enter your PC's LAN IP address (for example <code>http://192.168.1.15:8082</code>).</li>
+        </ul>
+
+        <h2 id="cloud">11. Cloud Storage &amp; Conflict Detection</h2>
+        <p>Connect <b>Google Drive</b>, <b>OneDrive</b>, <b>Dropbox</b>, or <b>MediaFire</b> right inside Yomi-Office. If someone else updates a shared cloud file while you are editing a cached copy, Yomi-Office warns you before overwriting so changes are not lost.</p>
+
+        <h2 id="dex-tv">12. Samsung DeX, TV Display &amp; Quick Share</h2>
+        <ul>
+          <li><b>Samsung DeX:</b> On supported Galaxy devices (such as Galaxy Note 9 and newer), the interface expands automatically into a desktop-class Ribbon layout with multi-window support.</li>
+          <li><b>TV / Secondary Display:</b> Output full-screen PowerPoint slide shows over HDMI or wireless casting (or test with Android's simulated secondary displays).</li>
+          <li><b>Quick Share:</b> Hand off newly saved files directly to nearby phones or Windows PCs.</li>
+        </ul>
+
+        <h2 id="updates">13. Software Updates</h2>
+        <p>Open <b>Options → Updates</b> to check for new versions. The primary source is <b>GitHub Releases</b>, with <b>Google Drive</b> and <b>MediaFire</b> as fallback mirrors plus an editable custom GitHub repository field. On Windows, the updater supports fetching and installing new <code>.msi</code> packages directly.</p>
+
+        <h2 id="faq">14. Frequently Asked Questions</h2>
+        <details>
+          <summary>Which APK file should I download for my Android device?</summary>
+          <p>Most phones released since 2016 use 64-bit ARM CPUs: download <b>Android10plus-arm64-v8a.apk</b> (or <code>Android8-9-arm64-v8a</code> / <code>Android6-7-arm64-v8a</code> for older Android versions). If Android refuses installation with "App not installed" on an older 32-bit device, switch to <code>armeabi-v7a</code>.</p>
+        </details>
+        <details>
+          <summary>Which build should I use on Windows 7?</summary>
+          <p>Pick a package from the <b>Win7-8.1</b> group (<code>Win7-8.1-x64</code> for 64-bit Windows 7 or <code>Win7-8.1-x86</code> for 32-bit Windows 7). Do not use <code>Win10-11</code> or <code>.appxbundle</code> builds on Windows 7.</p>
+        </details>
+        <details>
+          <summary>Why do very large Excel workbooks take longer to open on mobile?</summary>
+          <p>Workbooks containing tens of thousands of complex formulas, charts, or multi-workbook references require initial formula recalculation on mobile CPUs. Once loaded, everyday scrolling and edits become much smoother; closing heavy background apps can also help on older phones.</p>
+        </details>
+        <details>
+          <summary>Is Setup.exe safe when Windows Defender SmartScreen warns on launch?</summary>
+          <p>Yes — the installer is built from public source code on GitHub and signed with a self-signed certificate, which triggers SmartScreen until reputation builds up. You can verify the SHA-256 hash against <code>SHA256_v0.1.8.md</code> on GitHub Releases, then click <b>More info</b> → <b>Run anyway</b>.</p>
+        </details>
+        <details>
+          <summary>Why can't my phone reach Free Claude Code running on my PC?</summary>
+          <p><code>127.0.0.1</code> points to the phone itself. Find your PC's local Wi-Fi IP address running <code>fcc-server</code> (e.g., <code>192.168.1.20</code>), allow port <code>8082</code> through Windows Firewall, keep both devices on the same Wi-Fi, and enter <code>http://192.168.1.20:8082</code> in Yomi-Office on Android.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-box">
+        <h2>Ready to get started with Yomi-Office Open Source?</h2>
+        <p>Download v0.1.8 for your device or report an issue directly on GitHub.</p>
+        <div class="hero-buttons">
+          <a href="download.html" class="btn-primary">⬇️ Go to Download Page</a>
+          <a href="https://github.com/YomiHub-Project/Yomi-Office-Open-Source/issues" class="btn-secondary">🐞 Report an Issue on GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><img src="../assets/logo.png" alt=""><span>Yomi-Office Open Source</span></div>
+      <nav class="footer-links" aria-label="Links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="guide.html">User Guide</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://github.com/YomiHub-Project/Yomi-Office-Open-Source/releases">All releases</a>
+        <a href="../guide.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+        <a href="../../en/index.html">YomiHub</a>
+      </nav>
+      <div class="footer-note">© 2026 YomiHub Project · Free, open-source software. Microsoft Office, Word, Excel, and PowerPoint are trademarks of Microsoft; Yomi-Office Open Source is not affiliated with Microsoft.</div>
+    </div>
+  </footer>
+  <button class="to-top" aria-label="Back to top">↑</button>
+</body>
+</html>

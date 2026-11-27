@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – Yomi-Office Open Source</title>
+  <meta name="description" content="Privacy Policy for Yomi-Office Open Source: offline-first design, your files stay on your device, no ads, no analytics or hidden tracking.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="canonical" href="https://yomihub-project.github.io/Yomi-Website/yomi-office/en/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://yomihub-project.github.io/Yomi-Website/yomi-office/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://yomihub-project.github.io/Yomi-Website/yomi-office/en/privacy.html">
+  <link rel="stylesheet" href="../assets/office.css">
+  <script src="../assets/office.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"><img src="../assets/logo.png" alt=""><span>Yomi-Office Open Source</span></a>
+    <nav class="site-nav" aria-label="Pages">
+      <a href="index.html">Home</a>
+      <a href="download.html">Download</a>
+      <a href="guide.html">User Guide</a>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="lang-switch" href="../privacy.html" hreflang="vi" lang="vi">🌐 Tiếng Việt</a>
+      <a class="btn-github" href="https://github.com/YomiHub-Project/Yomi-Office-Open-Source">GitHub</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-hero">
+      <div class="hero-inner">
+        <div class="hero-badge">Effective November 27, 2026 · Transparent &amp; Offline-First</div>
+        <h1>Privacy Policy</h1>
+        <p>Yomi-Office Open Source processes your documents on your own device — zero ads, zero telemetry, zero data selling.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="prose">
+        <div class="note ok">
+          <b>Summary:</b> All your Word, Excel, PowerPoint, and PDF documents, CamScanner captures, preferences, and recent-file lists remain strictly on your device. The app runs no telemetry servers, requires no mandatory account, and accesses the Internet only when you explicitly check for updates or invoke online features.
+        </div>
+
+        <h2 id="local-data">1. Your Data Stays on Your Device</h2>
+        <p>Every core capability — Word editing, Excel calculations, PowerPoint presentations, PDF reading/merging/splitting, offline Vietnamese &amp; English OCR, CamScanner, and MathType — runs locally on your Android phone or Windows PC.</p>
+        <ul>
+          <li>Documents you create, edit, pin, or discover in the <b>On This Device</b> tab are never uploaded to project servers.</li>
+          <li>The app does not collect your name, email address, phone number, IMEI, GPS location, or contacts.</li>
+          <li>The <b>Windows Portable</b> edition stores settings next to its executable folder; standard Windows installs and Android store preferences inside OS-managed private app storage.</li>
+        </ul>
+
+        <h2 id="permissions">2. System Permissions We Request</h2>
+        <p>Permissions are requested solely to perform direct document operations chosen by you:</p>
+        <ul>
+          <li><b>Storage / "All files access" (Android 11+):</b> Required to scan and open Office files stored in <code>Documents</code>, <code>Download</code>, or folders you pick, and to write edits back cleanly.</li>
+          <li><b>Camera:</b> Requested only when you open <b>CamScanner</b> to photograph pages; captured images are processed locally into PDFs in the location you choose.</li>
+          <li><b>Network / Internet:</b> Used exclusively for the optional network actions listed in Section 3 below.</li>
+        </ul>
+
+        <h2 id="internet-use">3. When the App Connects to the Internet</h2>
+        <p>You can stay completely offline and use 100% of core office features. Network requests happen only when you trigger or enable these specific actions:</p>
+        <ul>
+          <li><b>Software update checks &amp; downloads:</b> When you check for updates (or leave automatic update checks enabled in Options), the app queries release metadata from <b>GitHub Releases</b> (primary source), <b>Google Drive</b>, or <b>MediaFire</b> (fallback mirrors). No personal identity or document content is transmitted; as with any HTTPS download, the hosting service receives standard network connection metadata such as your IP address under its own privacy policy.</li>
+          <li><b>Online A.I Assistant:</b> When you use <i>Web A.I</i> or submit a prompt using an API key for OpenAI, Anthropic (Claude), Google (Gemini), or DeepSeek, the prompt text you submit is sent directly from your device to that provider. When using Offline mode or a local server (Ollama, LM Studio, or Free Claude Code over LAN), requests do not leave your local network.</li>
+          <li><b>Cloud Storage:</b> When you sign in to Google Drive, OneDrive, Dropbox, or MediaFire to open or save files, the app communicates directly with that provider's official API within the permissions you grant.</li>
+        </ul>
+
+        <h2 id="api-keys">4. Local Protection of API Keys &amp; Credentials</h2>
+        <p>If you enter personal A.I API keys or cloud sign-in tokens:</p>
+        <ul>
+          <li><b>Windows:</b> API keys are encrypted before storage using <b>Windows DPAPI</b> tied to your local Windows user account.</li>
+          <li><b>Android:</b> Credentials are stored inside Android's private application sandbox, inaccessible to other apps.</li>
+          <li>Keys are never transmitted to YomiHub Project or any server other than the A.I or cloud endpoint you explicitly configure.</li>
+        </ul>
+
+        <h2 id="quick-share">5. Quick Share &amp; File Sharing</h2>
+        <p>When you trigger Quick Share or the system share dialog, Yomi-Office hands only the selected document over to Android/Windows native sharing or the nearby device you pick. No cloud relay is operated by YomiHub Project.</p>
+
+        <h2 id="children">6. Children's Privacy</h2>
+        <p>Yomi-Office Open Source is a general-purpose office suite not directed specifically at children under 13 and does not knowingly collect or retain personal information from children.</p>
+
+        <h2 id="changes">7. Policy Updates &amp; Open-Source Transparency</h2>
+        <p>This policy takes effect on <b>November 27, 2026</b>. Because Yomi-Office Open Source is open source, you can inspect all networking and storage code directly on GitHub. Material changes in future releases will update this page alongside a new effective date.</p>
+
+        <h2 id="contact">8. Contact</h2>
+        <p>For privacy questions or to report an unexpected issue, please open a thread at <a href="https://github.com/YomiHub-Project/Yomi-Office-Open-Source/issues"><b>Yomi-Office Open Source GitHub Issues</b></a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><img src="../assets/logo.png" alt=""><span>Yomi-Office Open Source</span></div>
+      <nav class="footer-links" aria-label="Links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="guide.html">User Guide</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://github.com/YomiHub-Project/Yomi-Office-Open-Source/releases">All releases</a>
+        <a href="../privacy.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+        <a href="../../en/index.html">YomiHub</a>
+      </nav>
+      <div class="footer-note">© 2026 YomiHub Project · Free, open-source software. Microsoft Office, Word, Excel, and PowerPoint are trademarks of Microsoft; Yomi-Office Open Source is not affiliated with Microsoft.</div>
+    </div>
+  </footer>
+  <button class="to-top" aria-label="Back to top">↑</button>
+</body>
+</html>

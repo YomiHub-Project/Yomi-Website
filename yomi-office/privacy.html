@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chính Sách Quyền Riêng Tư – Yomi-Office Open Source</title>
+  <meta name="description" content="Chính sách quyền riêng tư của Yomi-Office Open Source: ưu tiên ngoại tuyến, dữ liệu và tài liệu nằm trên máy bạn, không quảng cáo, không theo dõi ngầm.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="canonical" href="https://yomihub-project.github.io/Yomi-Website/yomi-office/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://yomihub-project.github.io/Yomi-Website/yomi-office/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://yomihub-project.github.io/Yomi-Website/yomi-office/en/privacy.html">
+  <link rel="stylesheet" href="assets/office.css">
+  <script src="assets/office.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"><img src="assets/logo.png" alt=""><span>Yomi-Office Open Source</span></a>
+    <nav class="site-nav" aria-label="Các trang">
+      <a href="index.html">Trang Chủ</a>
+      <a href="download.html">Tải Xuống</a>
+      <a href="guide.html">Hướng Dẫn Sử Dụng</a>
+      <a href="privacy.html" aria-current="page">Chính Sách Quyền Riêng Tư</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="lang-switch" href="en/privacy.html" hreflang="en" lang="en">🌐 English</a>
+      <a class="btn-github" href="https://github.com/YomiHub-Project/Yomi-Office-Open-Source">GitHub</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-hero">
+      <div class="hero-inner">
+        <div class="hero-badge">Hiệu lực từ 27/11/2026 · Minh bạch và ngoại tuyến</div>
+        <h1>Chính Sách Quyền Riêng Tư</h1>
+        <p>Yomi-Office Open Source xử lý tài liệu ngay trên thiết bị của bạn — không quảng cáo, không phân tích hành vi, không bán dữ liệu.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="prose">
+        <div class="note ok">
+          <b>Tóm tắt ngắn gọn:</b> Toàn bộ tài liệu Word, Excel, PowerPoint, PDF, ảnh CamScanner, cài đặt cá nhân và lịch sử mở tệp được lưu trữ hoàn toàn trên máy của bạn. Ứng dụng không có máy chủ thu thập dữ liệu người dùng (telemetry), không yêu cầu đăng ký tài khoản bắt buộc và chỉ kết nối Internet khi bạn chủ động dùng tính năng trực tuyến hoặc kiểm tra bản cập nhật.
+        </div>
+
+        <h2 id="du-lieu-tren-may">1. Dữ liệu được xử lý ngay trên máy của bạn</h2>
+        <p>Mọi tính năng cốt lõi — soạn thảo Word, tính toán bảng tính Excel, trình chiếu PowerPoint, đọc/sửa/ghép/tách PDF, nhận dạng chữ OCR tiếng Việt &amp; tiếng Anh, quét CamScanner và soạn công thức MathType — đều chạy cục bộ trên thiết bị Android hoặc Windows của bạn.</p>
+        <ul>
+          <li>Tài liệu bạn mở, lưu, ghim hoặc quét trong tab <b>Trên thiết bị</b> không bao giờ tự động tải lên máy chủ của dự án.</li>
+          <li>Ứng dụng không thu thập tên, email, số điện thoại, số IMEI, vị trí GPS hay danh bạ.</li>
+          <li>Phiên bản <b>Windows Portable</b> lưu toàn bộ cài đặt cạnh thư mục chạy; bản cài đặt chuẩn và Android lưu trong vùng dữ liệu ứng dụng riêng tư do hệ điều hành quản lý.</li>
+        </ul>
+
+        <h2 id="quyen-truy-cap">2. Quyền truy cập hệ thống mà ứng dụng yêu cầu</h2>
+        <p>Ứng dụng chỉ xin các quyền cần thiết trực tiếp cho thao tác mở, lưu và quét tài liệu:</p>
+        <ul>
+          <li><b>Bộ nhớ / Quyền "Quản lý tất cả tệp" (Android 11+):</b> Cần thiết để đọc, quét danh sách tệp Office trong <code>Documents</code> / <code>Download</code> / thư mục bạn chọn và lưu thay đổi vào đúng tệp gốc.</li>
+          <li><b>Máy ảnh (Camera):</b> Chỉ được gọi khi bạn chủ động mở tính năng <b>CamScanner</b> để chụp trang tài liệu; ảnh chỉ được xử lý trên máy và xuất ra PDF tại nơi bạn chỉ định.</li>
+          <li><b>Truy cập mạng (Internet / Wi-Fi):</b> Chỉ dùng khi có tác vụ mạng được liệt kê ở mục 3 bên dưới.</li>
+        </ul>
+
+        <h2 id="ket-noi-internet">3. Khi nào ứng dụng kết nối Internet?</h2>
+        <p>Bạn có thể ngắt mạng hoàn toàn và vẫn dùng được 100% tính năng văn phòng chính. Ứng dụng chỉ tạo kết nối mạng trong các trường hợp minh bạch sau:</p>
+        <ul>
+          <li><b>Kiểm tra &amp; tải cập nhật phần mềm:</b> Khi bạn bấm kiểm tra cập nhật (hoặc bật tự kiểm tra trong Tùy chọn), ứng dụng truy vấn thông tin bản phát hành từ <b>GitHub Releases</b> (nguồn chính), <b>Google Drive</b> hoặc <b>MediaFire</b> (nguồn phụ). Không có thông tin cá nhân hay tài liệu nào được gửi kèm; giống mọi kết nối HTTPS thông thường, máy chủ lưu trữ nhìn thấy địa chỉ IP truy cập theo chính sách riêng tư của nhà cung cấp đó.</li>
+          <li><b>Trợ lý A.I trực tuyến:</b> Khi bạn mở chế độ <i>Web A.I</i> hoặc gửi câu hỏi qua khóa API tới OpenAI, Anthropic (Claude), Google (Gemini) hoặc DeepSeek, nội dung câu hỏi do bạn gõ sẽ được gửi trực tiếp từ thiết bị của bạn tới dịch vụ A.I tương ứng. Khi dùng chế độ Ngoại tuyến hoặc máy chủ cục bộ (Ollama / LM Studio / Free Claude Code trên LAN), dữ liệu không rời khỏi mạng của bạn.</li>
+          <li><b>Lưu trữ Đám mây:</b> Khi bạn chủ động đăng nhập Google Drive, OneDrive, Dropbox hoặc MediaFire để mở/lưu tệp trên đám mây, ứng dụng giao tiếp trực tiếp với API chính thức của dịch vụ đó theo quyền bạn cấp.</li>
+        </ul>
+
+        <h2 id="khoa-api">4. Bảo mật khóa API &amp; thông tin đăng nhập cục bộ</h2>
+        <p>Nếu bạn nhập khóa API cá nhân cho Trợ lý A.I hoặc mã xác thực dịch vụ đám mây:</p>
+        <ul>
+          <li><b>Trên Windows:</b> Khóa API được mã hóa trước khi lưu bằng <b>Windows DPAPI</b> (gắn với tài khoản Windows đang đăng nhập của bạn).</li>
+          <li><b>Trên Android:</b> Lưu trong bộ nhớ riêng tư bảo mật của ứng dụng (app sandbox), các ứng dụng khác không đọc được.</li>
+          <li>Các khóa này không bao giờ được gửi về YomiHub Project hay bất kỳ bên thứ ba nào ngoài điểm cuối A.I/đám mây mà chính bạn cấu hình.</li>
+        </ul>
+
+        <h2 id="quick-share">5. Quick Share &amp; chia sẻ tệp</h2>
+        <p>Khi bạn chọn chia sẻ nhanh (Quick Share / Share sheet của hệ điều hành), Yomi-Office chỉ trao tệp bạn chỉ định cho cơ chế chia sẻ gốc của Android/Windows hoặc thiết bị đích bạn chọn trong mạng cục bộ. Ứng dụng không giữ bản sao trung gian trên mạng.</p>
+
+        <h2 id="tre-em">6. Quyền riêng tư của trẻ em</h2>
+        <p>Yomi-Office Open Source là bộ công cụ văn phòng đa dụng, không hướng riêng tới trẻ em dưới 13 tuổi và không thu thập, lập hồ sơ hay lưu trữ thông tin cá nhân của trẻ em.</p>
+
+        <h2 id="thay-doi">7. Thay đổi chính sách &amp; lưu trữ mã nguồn</h2>
+        <p>Chính sách này có hiệu lực từ ngày <b>27/11/2026</b>. Vì Yomi-Office là phần mềm mã nguồn mở, bạn có thể kiểm chứng mọi hành vi mạng và lưu trữ dữ liệu trực tiếp trong mã nguồn công khai trên GitHub. Khi có thay đổi đáng kể ở các phiên bản sau, nội dung trang này sẽ được cập nhật kèm ngày hiệu lực mới.</p>
+
+        <h2 id="lien-he">8. Liên hệ &amp; giải đáp thắc mắc</h2>
+        <p>Nếu có câu hỏi về quyền riêng tư hoặc phát hiện hành vi bất thường, vui lòng mở mục trao đổi tại <a href="https://github.com/YomiHub-Project/Yomi-Office-Open-Source/issues"><b>GitHub Issues của Yomi-Office Open Source</b></a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><img src="assets/logo.png" alt=""><span>Yomi-Office Open Source</span></div>
+      <nav class="footer-links" aria-label="Liên kết">
+        <a href="index.html">Trang Chủ</a>
+        <a href="download.html">Tải Xuống</a>
+        <a href="guide.html">Hướng Dẫn Sử Dụng</a>
+        <a href="privacy.html">Chính Sách Quyền Riêng Tư</a>
+        <a href="https://github.com/YomiHub-Project/Yomi-Office-Open-Source/releases">Tất cả phiên bản</a>
+        <a href="en/privacy.html" hreflang="en" lang="en">English</a>
+        <a href="../index.html">YomiHub</a>
+      </nav>
+      <div class="footer-note">© 2026 YomiHub Project · Phần mềm mã nguồn mở, miễn phí. Microsoft Office, Word, Excel, PowerPoint là nhãn hiệu của Microsoft; Yomi-Office Open Source không liên kết với Microsoft.</div>
+    </div>
+  </footer>
+  <button class="to-top" aria-label="Về đầu trang">↑</button>
+</body>
+</html>

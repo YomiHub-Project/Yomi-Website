@@ -35,3 +35,21 @@ Website của app Tử Vi nằm trong thư mục [`applied-astrology/`](applied-
 - CSS/JS dùng chung: `applied-astrology/assets/aa.css`, `aa.js`; không tải tài nguyên từ máy chủ ngoài.
 - **WordPress** (mẫu *Blank*, link ở bảng trên): nội dung sinh bằng `python3 tools/wp_inline_aa.py . wp-export/applied-astrology` (style nội tuyến, tách Việt/Anh – nút English/Tiếng Việt chuyển giữa 2 bản, không liên kết về YomiHub; chữ gradient đổi sang màu đặc vì WordPress.com lọc `background-clip`). Sửa trang GitHub ⇒ chạy lại lệnh này rồi cập nhật 8 trang WordPress.
 - Chuyển từ thư mục `docs/` của repo Applied-Astrology-T-Vi- ngày 27/11/2026; địa chỉ cũ `yomihub-project.github.io/Applied-Astrology-T-Vi-/` tự chuyển hướng về đây.
+
+## Yomi-Office Open Source
+
+Website của bộ ứng dụng văn phòng Yomi-Office Open Source nằm trong thư mục [`yomi-office/`](yomi-office/) — bản tiếng Việt ở `yomi-office/*.html`, bản tiếng Anh ở `yomi-office/en/*.html`; nút **English / Tiếng Việt** chuyển sang cùng trang ở ngôn ngữ kia.
+
+🌐 **https://yomihub-project.github.io/Yomi-Website/yomi-office/**
+
+| Trang | GitHub – Tiếng Việt | GitHub – English | WordPress – Tiếng Việt | WordPress – English |
+|---|---|---|---|---|
+| Trang Chủ | [index.html](https://yomihub-project.github.io/Yomi-Website/yomi-office/index.html) | [en/index.html](https://yomihub-project.github.io/Yomi-Website/yomi-office/en/index.html) | [https://yomihubproject.wordpress.com/yomi-office/](https://yomihubproject.wordpress.com/yomi-office/) | [https://yomihubproject.wordpress.com/yomi-office-en/](https://yomihubproject.wordpress.com/yomi-office-en/) |
+| Tải Xuống | [download.html](https://yomihub-project.github.io/Yomi-Website/yomi-office/download.html) | [en/download.html](https://yomihub-project.github.io/Yomi-Website/yomi-office/en/download.html) | [https://yomihubproject.wordpress.com/yomi-office/tai-xuong/](https://yomihubproject.wordpress.com/yomi-office/tai-xuong/) | [https://yomihubproject.wordpress.com/yomi-office-en/download/](https://yomihubproject.wordpress.com/yomi-office-en/download/) |
+| Hướng Dẫn Sử Dụng | [guide.html](https://yomihub-project.github.io/Yomi-Website/yomi-office/guide.html) | [en/guide.html](https://yomihub-project.github.io/Yomi-Website/yomi-office/en/guide.html) | [https://yomihubproject.wordpress.com/yomi-office/huong-dan/](https://yomihubproject.wordpress.com/yomi-office/huong-dan/) | [https://yomihubproject.wordpress.com/yomi-office-en/guide/](https://yomihubproject.wordpress.com/yomi-office-en/guide/) |
+| Chính Sách Quyền Riêng Tư | [privacy.html](https://yomihub-project.github.io/Yomi-Website/yomi-office/privacy.html) | [en/privacy.html](https://yomihub-project.github.io/Yomi-Website/yomi-office/en/privacy.html) | [https://yomihubproject.wordpress.com/yomi-office/chinh-sach-quyen-rieng-tu/](https://yomihubproject.wordpress.com/yomi-office/chinh-sach-quyen-rieng-tu/) | [https://yomihubproject.wordpress.com/yomi-office-en/privacy/](https://yomihubproject.wordpress.com/yomi-office-en/privacy/) |
+
+- Mã nguồn & bản cài: https://github.com/YomiHub-Project/Yomi-Office-Open-Source (mục **Releases**).
+- Mỗi bản phát hành: cập nhật phiên bản, tên tệp, dung lượng trong `yomi-office/download.html` và `yomi-office/en/download.html` (link `releases/download/v<ver>/…`).
+- CSS/JS dùng chung: `yomi-office/assets/office.css`, `office.js`; không tải tài nguyên từ máy chủ ngoài.
+- **WordPress** (mẫu *Blank*): nội dung sinh bằng `python3 tools/wp_inline_office.py` (style nội tuyến, không JS, nút English/Tiếng Việt chuyển giữa 2 bản, không liên kết về YomiHub) → `wp-export/yomi-office/`. Sửa trang GitHub ⇒ chạy lại lệnh này rồi cập nhật 8 trang WordPress.
