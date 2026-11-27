@@ -390,12 +390,14 @@ def _apply_recursive(el, rules, lang, initial_style=None, inherited_root=False):
 
     if style:
         el.attrs["style"] = dict_to_style(style)
-    for k in ("class", "aria-current", "data-latest-version"):
-        el.attrs.pop(k, None)
-
+    # Recurse BEFORE stripping class/aria-current: descendant selectors such as
+    # ".logo img", ".stat b", ".footer-links a" must still see the parent's classes.
     for ch in el.children:
         if isinstance(ch, El):
             _apply_recursive(ch, rules, lang)
+
+    for k in ("class", "aria-current", "data-latest-version"):
+        el.attrs.pop(k, None)
 
 
 def esc_attr(v):
@@ -450,7 +452,7 @@ def main():
 
         wrapper = (
             f'<!-- wp:html -->\n'
-            f'<div style="box-sizing:border-box;margin:0;padding:0;background:#f5f7fb;color:#0f172a;font-family:{FONT};line-height:1.65;font-size:16px">\n'
+            f'<div style=\'box-sizing:border-box;margin:0;padding:0;background:#f5f7fb;color:#0f172a;font-family:{FONT};line-height:1.65;font-size:16px\'>\n'
             + "\n".join(inner_parts)
             + "\n</div>\n<!-- /wp:html -->\n"
         )
