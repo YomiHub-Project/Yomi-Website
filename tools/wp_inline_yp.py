@@ -427,12 +427,30 @@ def transform_dom(body, page_key, lang):
                     new_children.append(sub)
                 continue
 
-            # 5. Apply language-specific href override if present
-            lang_href = ch.attrs.get(f"data-href-{lang}")
-            if lang_href:
-                ch.attrs["href"] = lang_href
+            # 5. Apply WordPress-specific or language-specific href override if present
+            wp_href = ch.attrs.get(f"data-wp-href-{lang}") or ch.attrs.get("data-wp-href")
+            if wp_href:
+                ch.attrs["href"] = wp_href
+                for desc in iter_elements(ch):
+                    if "yp-link-row-url" in desc.classes:
+                        desc.children = [Text(wp_href)]
+            else:
+                lang_href = ch.attrs.get(f"data-href-{lang}")
+                if lang_href:
+                    ch.attrs["href"] = lang_href
 
             new_children.append(ch)
+        if "yp-links-grid" in node.classes:
+            gh_idx = wp_idx = None
+            for idx, item in enumerate(new_children):
+                if isinstance(item, El):
+                    pg = item.attrs.get("data-platform-group")
+                    if pg == "gh" and gh_idx is None:
+                        gh_idx = idx
+                    elif pg == "wp" and wp_idx is None:
+                        wp_idx = idx
+            if gh_idx is not None and wp_idx is not None and gh_idx < wp_idx:
+                new_children[gh_idx], new_children[wp_idx] = new_children[wp_idx], new_children[gh_idx]
         node.children = new_children
 
     walk_clean(body)
