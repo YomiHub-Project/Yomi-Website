@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "name": {
+    "vi": "Yomi-Game Mod — Kho Extension chính thức",
+    "en": "Yomi-Game Mod — Official extension catalog"
+  },
+  "updated": "2026-11-28",
+  "app": "https://github.com/YomiHub-Project/Yomi-Game-Mode",
+  "guide": "https://github.com/YomiHub-Project/Yomi-Game-Mode/blob/main/docs/EXTENSION_GUIDE.md",
+  "extensions": [
+    {
+      "id": "gi",
+      "repo": "YomiHub-Project/Genshin-Impact-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "Genshin Impact",
+        "en": "Genshin Impact"
+      },
+      "description": {
+        "vi": "Bộ cài mod GIMI (3Dmigoto) cho Genshin Impact, kèm GI FPS Unlocker",
+        "en": "GIMI (3Dmigoto) mod tool for Genshin Impact with GI FPS Unlocker"
+      },
+      "icon": "icons/gi.png",
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Genshin-Impact-Mod-Tool-Yomi/main/extension.json",
+      "modType": "migoto",
+      "nsfw": false
+    },
+    {
+      "id": "hi3",
+      "repo": "YomiHub-Project/Honkai-Impact-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "Honkai Impact 3rd",
+        "en": "Honkai Impact 3rd"
+      },
+      "description": {
+        "vi": "Bộ cài mod HIMI (3Dmigoto) cho Honkai Impact 3rd",
+        "en": "HIMI (3Dmigoto) mod tool for Honkai Impact 3rd"
+      },
+      "icon": "icons/hi3.png",
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Honkai-Impact-Mod-Tool-Yomi/main/extension.json",
+      "modType": "migoto",
+      "nsfw": false
+    },
+    {
+      "id": "hsr",
+      "repo": "YomiHub-Project/Honkai-Star-Rail-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "Honkai: Star Rail",
+        "en": "Honkai: Star Rail"
+      },
+      "description": {
+        "vi": "Bộ cài mod SRMI (3Dmigoto) cho Honkai: Star Rail",
+        "en": "SRMI (3Dmigoto) mod tool for Honkai: Star Rail"
+      },
+      "icon": "icons/hsr.png",
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Honkai-Star-Rail-Mod-Tool-Yomi/main/extension.json",
+      "modType": "migoto",
+      "nsfw": false
+    },
+    {
+      "id": "wuwa",
+      "repo": "YomiHub-Project/Wuthering-Waves-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "Wuthering Waves",
+        "en": "Wuthering Waves"
+      },
+      "description": {
+        "vi": "Bộ cài mod WWMI (3Dmigoto) + quản lý mod .pak cho Wuthering Waves",
+        "en": "WWMI (3Dmigoto) mod tool + .pak mod manager for Wuthering Waves"
+      },
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Wuthering-Waves-Mod-Tool-Yomi/main/extension.json",
+      "modType": "migoto",
+      "nsfw": false
+    },
+    {
+      "id": "zzz",
+      "repo": "YomiHub-Project/Zenless-Zone-Zero-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "Zenless Zone Zero",
+        "en": "Zenless Zone Zero"
+      },
+      "description": {
+        "vi": "Bộ cài mod ZZMI (3Dmigoto) cho Zenless Zone Zero",
+        "en": "ZZMI (3Dmigoto) mod tool for Zenless Zone Zero"
+      },
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Zenless-Zone-Zero-Mod-Tool-Yomi/main/extension.json",
+      "modType": "migoto",
+      "nsfw": false
+    },
+    {
+      "id": "ef",
+      "repo": "YomiHub-Project/Arknight-Endfield-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "Arknights: Endfield",
+        "en": "Arknights: Endfield"
+      },
+      "description": {
+        "vi": "Bộ cài mod EFMI (3Dmigoto) cho Arknights: Endfield",
+        "en": "EFMI (3Dmigoto) mod tool for Arknights: Endfield"
+      },
+      "icon": "icons/ef.png",
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Arknight-Endfield-Mod-Tool-Yomi/main/extension.json",
+      "modType": "migoto",
+      "nsfw": false
+    },
+    {
+      "id": "tof",
+      "repo": "YomiHub-Project/Tower-Of-Fantasy-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "Tower of Fantasy",
+        "en": "Tower of Fantasy"
+      },
+      "description": {
+        "vi": "3Dmigoto (bo3b) + quản lý mod skin .pak cho Tower of Fantasy",
+        "en": "3Dmigoto (bo3b) + .pak skin mod manager for Tower of Fantasy"
+      },
+      "icon": "icons/tof.png",
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Tower-Of-Fantasy-Mod-Tool-Yomi/main/extension.json",
+      "modType": "migoto",
+      "nsfw": false
+    },
+    {
+      "id": "ba",
+      "repo": "YomiHub-Project/Blue-Archive-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "Blue Archive",
+        "en": "Blue Archive"
+      },
+      "description": {
+        "vi": "Quản lý mod skin/asset (thay tệp AssetBundle, có sao lưu/khôi phục) cho Blue Archive (PC/Steam)",
+        "en": "Skin/asset mod manager (AssetBundle replacement with backup/restore) for Blue Archive (PC/Steam)"
+      },
+      "icon": "icons/ba.png",
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Blue-Archive-Mod-Tool-Yomi/main/extension.json",
+      "modType": "asset",
+      "nsfw": false
+    },
+    {
+      "id": "pgr",
+      "repo": "YomiHub-Project/Punishing-Gray-Raven-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "Punishing: Gray Raven",
+        "en": "Punishing: Gray Raven"
+      },
+      "description": {
+        "vi": "Quản lý mod skin/asset (thay tệp, có sao lưu/khôi phục) cho Punishing: Gray Raven (PC)",
+        "en": "Skin/asset mod manager (file replacement with backup/restore) for Punishing: Gray Raven (PC)"
+      },
+      "icon": "icons/pgr.png",
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Punishing-Gray-Raven-Mod-Tool-Yomi/main/extension.json",
+      "modType": "asset",
+      "nsfw": false
+    },
+    {
+      "id": "ag",
+      "repo": "YomiHub-Project/Aether-Gazer-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "Aether Gazer",
+        "en": "Aether Gazer"
+      },
+      "description": {
+        "vi": "Quản lý mod skin/asset (thay tệp, có sao lưu/khôi phục) cho Aether Gazer (bản PC)",
+        "en": "Skin/asset mod manager (file replacement with backup/restore) for Aether Gazer (PC client)"
+      },
+      "icon": "icons/ag.png",
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Aether-Gazer-Mod-Tool-Yomi/main/extension.json",
+      "modType": "asset",
+      "nsfw": false
+    },
+    {
+      "id": "sds",
+      "repo": "YomiHub-Project/The-Seven-Deadly-Sins-Mod-Tool-Yomi",
+      "version": "1.0.2",
+      "name": {
+        "vi": "The Seven Deadly Sins",
+        "en": "The Seven Deadly Sins"
+      },
+      "description": {
+        "vi": "Quản lý mod skin/asset (thay tệp, có sao lưu/khôi phục) cho The Seven Deadly Sins: Grand Cross / Origin (PC)",
+        "en": "Skin/asset mod manager (file replacement with backup/restore) for The Seven Deadly Sins: Grand Cross / Origin (PC)"
+      },
+      "icon": "icons/sds.png",
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/The-Seven-Deadly-Sins-Mod-Tool-Yomi/main/extension.json",
+      "modType": "asset",
+      "nsfw": false
+    },
+    {
+      "id": "gta5",
+      "repo": "YomiHub-Project/Grand-Theft-Auto-V-Mod-Tool-Yomi",
+      "version": "1.0.0",
+      "name": {
+        "vi": "Grand Theft Auto V",
+        "en": "Grand Theft Auto V"
+      },
+      "description": {
+        "vi": "Quản lý mod hình ảnh/skin cho GTA V Legacy & Enhanced (chế độ chơi đơn): thay tệp có sao lưu/khôi phục, Skin Menu đổi biến thể, FOMOD, kiểm tra Script Hook V, khởi chạy ngoại tuyến (-scOfflineOnly)",
+        "en": "Visual/skin mod manager for GTA V Legacy & Enhanced (Story Mode): file replacement with backup/restore, Skin Menu variants, FOMOD, Script Hook V check, offline launch (-scOfflineOnly)"
+      },
+      "icon": "icons/gta5.png",
+      "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Grand-Theft-Auto-V-Mod-Tool-Yomi/main/extension.json",
+      "modType": "asset",
+      "nsfw": false,
+      "contentNote": {
+        "vi": "Chỉ dùng mod ở chế độ chơi đơn. Không dùng mod trong GTA Online (vi phạm điều khoản, có thể bị khoá tài khoản).",
+        "en": "Story Mode only. Never use mods in GTA Online (against the terms, may get the account banned)."
+      }
+    }
+  ]
+}
