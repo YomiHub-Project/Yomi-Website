@@ -62,7 +62,7 @@
     {
       "id": "wuwa",
       "repo": "YomiHub-Project/Wuthering-Waves-Mod-Tool-Yomi",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "name": {
         "vi": "Wuthering Waves",
         "en": "Wuthering Waves"
@@ -71,6 +71,7 @@
         "vi": "Bộ cài mod WWMI (3Dmigoto) + quản lý mod .pak cho Wuthering Waves",
         "en": "WWMI (3Dmigoto) mod tool + .pak mod manager for Wuthering Waves"
       },
+      "icon": "icons/wuwa.png",
       "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Wuthering-Waves-Mod-Tool-Yomi/main/extension.json",
       "modType": "migoto",
       "nsfw": false
@@ -78,7 +79,7 @@
     {
       "id": "zzz",
       "repo": "YomiHub-Project/Zenless-Zone-Zero-Mod-Tool-Yomi",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "name": {
         "vi": "Zenless Zone Zero",
         "en": "Zenless Zone Zero"
@@ -87,6 +88,7 @@
         "vi": "Bộ cài mod ZZMI (3Dmigoto) cho Zenless Zone Zero",
         "en": "ZZMI (3Dmigoto) mod tool for Zenless Zone Zero"
       },
+      "icon": "icons/zzz.png",
       "manifest": "https://raw.githubusercontent.com/YomiHub-Project/Zenless-Zone-Zero-Mod-Tool-Yomi/main/extension.json",
       "modType": "migoto",
       "nsfw": false
